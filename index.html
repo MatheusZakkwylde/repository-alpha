@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+
+<!--tag html
+    Description - Tag pai de todas as tags da estrutura html
+    lang="pt-br" informa que o documento descrito é linguagem portuguesa para os navegadores-->
+<!--tag semântica-->
+<html lang="pt-br">
+
+<!--tag head
+Description - Tag cabeçalho do documento html. Responsável por inicialização de informações do 
+documento como tipo de caracter, titulo etc.-->
+
+<!--tag semântica-->
+<head>
+    
+    <!--charset="UTF-8 - Indicação de caracteres e texto da lingua portuguesa-->
+    <meta charset="UTF-8">
+    
+    <!--name="description" - Descreve a descrição do documento-->
+    <meta name="description" content="Descrição da aplicação">
+    
+    <!--name="author" - Descrição do auto da página.-->
+    <meta name="author" content="Matheus Pinheiro Pereira">
+
+    <!-- icone para celular -->
+   <link rel="apple-touch-icon" sizes="76x76" href="@{/assets/img/apple-icon.png}">
+   <!--icone para site web-->
+   <link rel="icon" type="image/png" href="@{/assets/img/favicon.png}">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--tag title
+     Description - Tags de titulo do documento-->
+    <title>Document</title>
+</head>
+
+<!--tadg body
+Description - Corpo do documento. Responsável por centralizar todos os dados-->
+<body>
+
+    <!--Header
+    Description - Cabeçalho da documentação secundario. Responsável pela semântica de cabeçalho do docu
+    mento dando a sensibilidade para pessoas especiais e facilidade de registro pelo google em uma 
+    pesquisa.-->
+    <header>
+
+        <!--nav
+        Description - Semânticamente definido para a navegação no sistema dando asensibilidade e
+        facilidade de pesquisa para os navegadores-->
+        <nav>
+            <!--Ul li
+            Description - Lista não ordenada dos elemento da navegação.-->
+            <ul>
+                <li>nav</li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--sectionn - Sessão do documento semânticamente definido como uma seção de informações-->
+    <section>
+
+        <!--article - Semânticamente o conteúdo da sessão-->
+        <article>
+
+            <!--header - Cabeçalho do artigo-->
+            <header>
+
+                <!--hgroup - Grupos de titulos-->
+                <hgroup>
+                    <!--h1,2,3,4,5,6 - São titulos sequênciais-->
+                   <h1>Titulo 1</h1>
+                   <h2>Titulo 2</h2>
+                   <h3>Titulo 3</h3>
+                   <h4>Titulo 4</h4>
+                   <h5>Titulo 5</h5>
+                   <h6>Titulo 6</h6>
+                </hgroup>
+            </header>
+            
+            <!--p - Paragráfo-->
+            <p>
+                <!--strong - Negrito-->
+                <strong>Negrito</strong>
+                <!--i - Italico-->
+                <i>Italico</i>
+                <!--em - Italico com enfase-->
+                <em>Italico com enfase</em>
+            </p>
+
+             <!--figure - figura semânticamente-->
+             <figure>
+                <!--img - imagem
+                src - url da imagem 
+                alt - descrição da imagem-->
+                <img src="imagem.png" alt="">
+                <!-- figcaption - legenda do img-->
+                <figcaption></figcaption>
+            </figure>
+
+            <!--link para abrir outra página-->
+            <a href="" target="_blank">link para outra página fora do software</a>
+            <!--link de envio de email-->
+            <a href="mailto:matheuszakkwylde360@gmail.com">link para envio de email</a>
+            <!--baixar arquivos-->
+            <a href="arquivo.rar">link para baixar arquivo</a>
+
+
+            <!--lista ordenada numerica-->
+            <ol type="1">
+                <li>lista  ordenada por numeros</li>
+            </ol>
+
+            <!--lista ordenada numerica começando od 5-->
+            <ol type="1" start="5">
+                <li>lista ordenada por numeros começando do valor 5</li>
+            </ol>
+
+            <!--lista ordenada por ordem alfabetica A-->
+            <ol type="A">
+                <li>lista ordenada por ordem alfabetica</li>
+            </ol>
+
+            <!--lista ordenada por números homanos-->
+            <ol type="i">
+                <li>lista ordenda por nímeros homanos</li>
+            </ol>
+
+            <!--lista não ordenada simples-->
+            <ul type="disc">
+                <li>lista não ordenda simples</li>
+            </ul>
+
+            <!--lista não ordenada por quadrados-->
+            <ul type="square">
+                <li>lista não ordenada com cadrinhos</li>
+            </ul>
+
+            <!--lista não ordenada por circulo vazio-->
+            <ul type="circle">
+                <li>lista não ordenada por circulos abertos</li>
+            </ul>
+             <!--tags de formulario com a acão de envio do tipo post-->
+            <form action="" method="post">
+                <!--separação dos campos-->
+               <fieldset>
+                   <!--legenda-->
+                    <legend>Legenda do form</legend>
+                    <!--label de informações do campo input com o for de extenção do campo name que,
+                    ao clicar direciona diretamente para o campo input onde o for aponta para o id-->
+                    <label for="name">Name</label>
+                    <!--input - tipo texto com nome e valor name com o placeholder de exibição e valor maximo e required com campo obrigatório-->
+                    <input type="text" name="name" value="name" id="name" placeholder="digite" maxlength="10" required>
+                    
+                    <!--campo de email-->
+                    <label for="email">Email</label>
+                    <input type="email" name="" value=""   id="email">
+
+                    <!--campo de password-->
+                    <label for="password">password</label>
+                    <!--readonly deixa o campo apenas para exibição e envio dos dados-->
+                    <input type="password" name="" value="" id="password" readonly>
+
+                    <!-- min - minimo valor a ser rebido e o valor máximo é 100 e step pula o valor em 10 a 10-->
+                    <label for="number">number</label>
+                    <input type="number" name="" id="number"  min="0" max="100" step="10">
+                    
+                    <!--campo de seleção unica masculino ou feminino-->
+                    <label for="sexo">Masculino</label>
+                    <input type="radio" name="sexo" id="sexo">
+                    <label for="sexo">Feminino</label>
+                    <input type="radio" name="sexo" id="sexo">
+                     
+                    <!--campo de data-->
+                    <label for="data">data</label>
+                    <input type="date" name="" id="data">
+
+                    <!--seleção de dados ou dado-->
+                    <label for="value">Selecão</label>
+                    <select name="value" id="value">
+                        <!--grupos pré definidos-->
+                        <optgroup label="titulo">
+                            <option value="select"></option>
+                            <!--seleção pré definida-->
+                            <option value="select" selected></option>
+                        </optgroup>
+                    </select>
+
+                    <label for="city">City</label>
+                    <input type="text" id="city">
+
+                    <datalist id="citys" list="cidades">
+                        <option value="">Riacho da cruz</option>
+                        <option value="">Viçosa</option>
+                    </datalist>
+
+
+                    <label>checkbox</label>
+                    <input type="checkbox" name="" id="">
+                    <label>checkbox</label>
+                    <input type="checkbox"  name="" checked id="">
+
+                    <label></label>
+                    <textarea name="" id="" cols="3" rows="10">
+
+                    </textarea>
+
+                    <button type="submit"></button>
+                    <button type="reset"></button>
+               </fieldset>
+            </form>
+
+            <div>
+                <!--audio comum-->
+                <audio controls>
+                    <source  src="audio.mp3" type="audio/mpeg">
+                </audio>
+
+                <!--audio com play inicializado-->
+                <audio controls autoplay loop>
+                    <source  src="audio.mp3" type="audio/mpeg"/>
+                </audio>
+
+                <video controls>
+                    <source src="video.pm4" type="video/mp4"/>
+                </video>
+
+                <video controls autoplay loop poster="imagem.png">
+                    <source src="video.pm4" type="video/mp4"/>
+                </video>
+            </div>
+
+
+            <table>
+                <!--titulo tabela-->
+                <caption>Titulo da tabela</caption>
+               <thead>
+                   <tr>
+                       <th rowspan="2">Nome</th>
+                       <!--duas colunas-->
+                       <th colspan="2">endereço</th>
+                   </tr>
+               </thead>
+               <tbody>
+                   <!--linha-->
+               <tr>
+                   <!--coluna-->
+                   <td></td>
+                   <td></td>
+               </tr>
+               </tbody>
+               <tfoot></tfoot>
+           </table>
+        </article>
+    </section>
+</body>
+</html>
