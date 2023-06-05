@@ -1,0 +1,70 @@
+.nav-link {
+    font-family: "Playfair Display", serif;
+    color: #111111; /* Código hexadecimal para preto brilhante */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Sombras de texto */
+    transition: transform 0.3s ease; /* Transição suave */
+  }
+  .nav-link:hover {
+    transform: translateY(2px); /* Efeito de baixar */
+    color: #111111; /* Código hexadecimal para preto brilhante */
+  }
+  
+  .card{
+    border-radius: 50px;
+    margin-bottom: 1px;
+    border-color: #A9A9A9	 !important;
+    border: 3px solid;
+    transition: transform 0.3s ease; /* Transição suave */
+  }
+
+  .card:hover{
+    transform: translateY(2px); /* Efeito de baixar */
+  }
+
+  .card-header {
+    background-color: #D3D3D3; 
+    border-radius: 50px !important; /* Pontas redondas */
+    border: none;
+    position: relative;
+    padding: 1rem;
+    cursor: pointer;
+  }
+  
+
+  .card-header button {
+    color: #111111; /* Cor do texto no botão */
+    border-radius: 0px 50px 0px 50px;
+    font-family: "Playfair Display", serif;
+    padding-left: 30px;
+    padding-right: 30px;
+    border: 3px solid #808080;
+  }
+  .card-body{
+    border-radius: 50px 50px 50px 50px !important; /* Pontas redondas */
+    border: 3px solid #808080;
+    margin: 10px;
+  }
+
+  .card-body button{
+    color: #111111; /* Cor do texto no botão */
+    border-radius: 0px 50px 0px 50px;
+    font-family: "Playfair Display", serif;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-left: 20px;
+    border: 3px solid #808080	;
+  }
+
+  .card-header button:focus {
+    outline: none; /* Remover a borda de foco */
+  }
+
+  .card-body {
+    background-color: #f8f9fa; /* Cor de fundo */
+    padding: 10px; /* Espaçamento interno */
+  }
+
+  .list-group-item {
+    border: none; /* Remover borda do item da lista */
+  }
+  

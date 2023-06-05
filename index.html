@@ -14,38 +14,69 @@
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-
+  <link rel="stylesheet" href="./css/index.css">
 
 </head>
 
 <body>
   <div class="container-fluid">
+
+    <!--INICIO NAV BAR-->
     <header>
-      <nav class="navbar navbar-expand-lg ">
+      <nav class="navbar navbar-expand-lg">
         <img class="navbar-brand img-fluid col-md-1" src="./img/icon.jpeg"></img>
 
         <div class="collapse navbar-collapse">
           <ul class="navbar-nav">
             <li class="nav-item">
               <h1>
-                <a class="nav-link" href="#"> Suporte Alpha Team</a>
+                <a class="nav-link mt-3" href="index.html"> Suporte Alpha Team</a>
               </h1>
             </li>
           </ul>
         </div>
       </nav>
     </header>
+    <!--FIM NAV BAR-->
 
     <section class="mt-4">
       <div class="row">
+        
         <div class="col-md-6">
 
           <div class="accordion" id="acordiondata">
+            <!--CARD ATENDIMENTO-->
             <div class="card">
-              <div class="card-header" id="buttonaccordion1">
-                <button class="btn" type="button" data-toggle="collapse" data-target="#collapse1"
+              <div class="card-header" id="card-header">
+                <button class="btn  btn-secondary btn-md text-white  " type="button" data-toggle="collapse" data-target="#collapsePT1" aria-controls="collapsePT1">
+                   Atendimento / Monitoria de Qualidade   <span><i class="bi bi-search ml-2"></i> </span>
+                </button>
+              </div>
+
+              <div id="collapsePT1" class="collapse" aria-labelledby="buttonaccordionA" data-parent="#buttonaccordionA">
+                <div class="card-body">
+                  
+                  <button class="btn  btn-secondary btn-md text-white" type="button" data-toggle="collapse" data-target="#collapseD" aria-controls="collapseD">
+                    <i class="bi bi-search"></i> Atendimento de Qualidade
+                  </button>
+                  
+                  <div id="collapseD" class="collapse" aria-labelledby="buttonaccordionD" data-parent="#buttonaccordionD">
+                    <ul class="list-group">
+                      <li class="list-group-item">
+                        <a href="https://docs.google.com/presentation/d/1HktDkrnd1bvylzntL3dWmpyPyahSzrp1zZ_e9rclfB0/edit?usp=sharing" target="_blank" class="btn btn-link">Capacitar para Multiplicar</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- FIM CARD ATENDIMENTO-->
+
+            <div class="card">
+              <div class="card-header " id="buttonaccordionT">
+                <button class="btn btn-secondary btn-md text-white" type="button" data-toggle="collapse" data-target="#collapse1"
                   aria-controls="collapse1">
-                  <i class="bi bi-search"></i> Sistemas de Atendimento
+                  Sistemas de Atendimento <span><i class="bi bi-search ml-2"></i> </span>
                 </button>
               </div>
 
@@ -91,9 +122,9 @@
             <div class="card">
               <div class="card-header" id="buttonaccordion2">
                 <h2 class="mb-0">
-                  <button class="btn" type="button" data-toggle="collapse" data-target="#collapse2"
+                  <button class="btn  btn-secondary btn-md text-white" type="button" data-toggle="collapse" data-target="#collapse2"
                     aria-controls="collapse2">
-                    <i class="bi bi-search"></i> Suporte ONU / TP-LINK
+                    Suporte ONU / TP-LINK <span><i class="bi bi-search ml-2"></i> </span>
                   </button>
                 </h2>
               </div>
@@ -120,9 +151,9 @@
             <div class="card">
               <div class="card-header" id="buttonaccordionApp">
                 <h2 class="mb-0">
-                  <button class="btn" type="button" data-toggle="collapse" data-target="#collapseApp"
+                  <button class="btn  btn-secondary btn-md text-white" type="button" data-toggle="collapse" data-target="#collapseApp"
                     aria-controls="collapseApp">
-                    <i class="bi bi-search"></i> Aplicativos
+                     Aplicativos <span><i class="bi bi-search ml-2"></i> </span>
                   </button>
                 </h2>
               </div>
@@ -189,9 +220,9 @@
           <div class="accordion" id="acordiondata">
             <div class="card">
               <div class="card-header" id="buttonaccordion3">
-                <button class="btn" type="button" data-toggle="collapse" data-target="#collapse3"
+                <button class="btn  btn-secondary btn-md text-white" type="button" data-toggle="collapse" data-target="#collapse3"
                   aria-controls="collapse3">
-                  <i class="bi bi-search"></i> IMOC / FTTH
+                   IMOC / FTTH <span><i class="bi bi-search ml-2"></i> </span>
                 </button>
               </div>
 
@@ -219,9 +250,9 @@
             <div class="card">
               <div class="card-header" id="buttonaccordion4">
 
-                <button class="btn" type="button" data-toggle="collapse" data-target="#collapse4"
+                <button class="btn  btn-secondary btn-md text-white" type="button" data-toggle="collapse" data-target="#collapse4"
                   aria-controls="collapse4">
-                  <i class="bi bi-search"></i> Instalação / Reparo
+                    Instalação / Reparo  <i class="bi bi-search"></i>
                 </button>
 
               </div>
