@@ -24,8 +24,11 @@
     <!--INICIO NAV BAR-->
     <header>
       <nav class="navbar navbar-expand-lg">
-        <img class="navbar-brand img-fluid col-md-1" src="./img/icon.jpeg"></img>
-
+        <div id="logo-container" class="col-md-1">
+          <img class="navbar-brand img-fluid" src="./img/imagem lobo branco.png" alt="Logo Inicial">
+          <img class="navbar-brand img-fluid hover-img" src="./img/imagem lobo branco.png" alt="Logo com Mouse Hover">
+        </div>
+    
         <div class="collapse navbar-collapse">
           <ul class="navbar-nav">
             <li class="nav-item">
@@ -37,6 +40,7 @@
         </div>
       </nav>
     </header>
+    
     <!--FIM NAV BAR-->
 
     <section class="mt-4">
@@ -44,26 +48,31 @@
         
         <div class="col-md-6">
 
-          <div class="accordion" id="acordiondata">
+          <div class="accordion" id="data">
+
             <!--CARD ATENDIMENTO-->
             <div class="card">
+
               <div class="card-header" id="card-header">
-                <button class="btn  btn-secondary btn-md text-white  " type="button" data-toggle="collapse" data-target="#collapsePT1" aria-controls="collapsePT1">
+                <button class="btn  btn-secondary btn-md text-white" type="button" data-toggle="collapse" data-target="#atendimento" aria-controls="atendimento">
                    Atendimento / Monitoria de Qualidade   <span><i class="bi bi-search ml-2"></i> </span>
                 </button>
               </div>
 
-              <div id="collapsePT1" class="collapse" aria-labelledby="buttonaccordionA" data-parent="#buttonaccordionA">
+              <div id="atendimento" class="collapse" aria-labelledby="atendimento" data-parent="#capacitar">
+                
                 <div class="card-body">
                   
-                  <button class="btn  btn-secondary btn-md text-white" type="button" data-toggle="collapse" data-target="#collapseD" aria-controls="collapseD">
-                    <i class="bi bi-search"></i> Atendimento de Qualidade
+                  <button class="btn  btn-secondary btn-md text-white" type="button" data-toggle="collapse" data-target="#capacitar" aria-controls="capacitar">
+                     Atendimento de Qualidade <i class="bi bi-search"></i>
                   </button>
                   
-                  <div id="collapseD" class="collapse" aria-labelledby="buttonaccordionD" data-parent="#buttonaccordionD">
+                  <div id="capacitar" class="collapse" aria-labelledby="capacitar" data-parent="#data">
                     <ul class="list-group">
                       <li class="list-group-item">
-                        <a href="https://docs.google.com/presentation/d/1HktDkrnd1bvylzntL3dWmpyPyahSzrp1zZ_e9rclfB0/edit?usp=sharing" target="_blank" class="btn btn-link">Capacitar para Multiplicar</a>
+                        <a href="https://docs.google.com/presentation/d/1HktDkrnd1bvylzntL3dWmpyPyahSzrp1zZ_e9rclfB0/edit?usp=sharing" target="_blank" class="btn btn-outline-info">
+                          Capacitar para Multiplicar <i class="bi bi-globe"></i>
+                        </a>
                       </li>
                     </ul>
                   </div>
@@ -72,48 +81,45 @@
             </div>
             <!-- FIM CARD ATENDIMENTO-->
 
+            <!--CARD SISTEMAS-->
             <div class="card">
-              <div class="card-header " id="buttonaccordionT">
-                <button class="btn btn-secondary btn-md text-white" type="button" data-toggle="collapse" data-target="#collapse1"
+              <div class="card-header " id="buttonaccordion1">
+                <button class="btn btn-secondary btn-md text-white" type="button" data-toggle="collapse" data-target="#sistema"
                   aria-controls="collapse1">
                   Sistemas de Atendimento <span><i class="bi bi-search ml-2"></i> </span>
                 </button>
               </div>
 
-
-              <div id="collapse1" class="collapse" aria-labelledby="buttonaccordion1" data-parent="#buttonaccordion1">
+              <div id="sistema" class="collapse" aria-labelledby="buttonaccordion1" data-parent="#buttonaccordion1">
                 <div class="card-body">
                   <ul class="list-group">
                     <li class="list-group-item">
-                      <a href="https://siga.brisanet.net.br" target="_blank" class="btn btn-link">SIGA - Sistema
-                        Integrado de Gestão de Atendimento</a>
+                      <a href="https://siga.brisanet.net.br" target="_blank" class="btn btn-outline-info">SIGA - Sistema Integrado de Gestão de Atendimento <i class="bi bi-globe"></i></a>
                     </li>
                     <li class="list-group-item">
-                      <a href="https://brisanet.matrixdobrasil.ai" target="_blank" class="btn btn-link">Matrix Mimi</a>
+                      <a href="https://brisanet.matrixdobrasil.ai" target="_blank" class="btn btn-outline-info">Matrix Mimi <i class="bi bi-globe"></i></a>
                     </li>
                     <li class="list-group-item">
-                      <a href="https://revan-atendimento.brisanet.net.br" target="_blank" class="btn btn-link">Revan
-                        Atendimentos (Yoda)</a>
+                      <a href="https://revan-atendimento.brisanet.net.br" target="_blank" class="btn btn-outline-info">Revan
+                        Atendimentos (Yoda) <i class="bi bi-globe"></i></a>
                     </li>
                     <li class="list-group-item">
-                      <a href="https://novorevan.brisanet.net.br" target="_blank" class="btn btn-link">Novo Revan</a>
+                      <a href="https://novorevan.brisanet.net.br" target="_blank" class="btn btn-outline-info">Novo Revan <i class="bi bi-globe"></i></a>
                     </li>
                     <li class="list-group-item">
-                      <a href="https://raumil.brisanet.net.br" target="_blank" class="btn btn-link">Raumil</a>
+                      <a href="https://raumil.brisanet.net.br" target="_blank" class="btn btn-outline-info">Raumil <i class="bi bi-globe"></i></a>
                     </li>
                     <li class="list-group-item">
-                      <a href="https://saski.brisanet.net.br" target="_blank" class="btn btn-link">Saski</a>
+                      <a href="https://saski.brisanet.net.br" target="_blank" class="btn btn-outline-info">Saski <i class="bi bi-globe"></i></a>
                     </li>
                     <li class="list-group-item">
-                      <a href="https://agendamento.brisanet.net.br" target="_blank" class="btn btn-link">Painel 4.0</a>
+                      <a href="https://agendamento.brisanet.net.br" target="_blank" class="btn btn-outline-info">Painel 4.0 <i class="bi bi-globe"></i></a>
                     </li>
                     <li class="list-group-item">
-                      <a href="https://grupobrisanet.mybeehome.com" target="_blank" class="btn btn-link">Universo
-                        Brisa</a>
+                      <a href="https://grupobrisanet.mybeehome.com" target="_blank" class="btn btn-outline-info">Universo Brisa <i class="bi bi-globe"></i></a>
                     </li>
                     <li class="list-group-item">
-                      <a href="https://universidadecorporativa.brisanet.net.br" target="_blank"
-                        class="btn btn-link">Universo Brisa</a>
+                      <a href="https://universidadecorporativa.brisanet.net.br" target="_blank" class="btn btn-outline-info">Brisa EAD <i class="bi bi-globe"></i></a>
                     </li>
                   </ul>
                 </div>
@@ -133,15 +139,15 @@
                   <ul class="list-group">
                     <li class="list-group-item">
                       <a href="https://form.asana.com/?k=ZKtRz7T-MoFWSLZRpyuQUQ&d=1187238493337382" target="_blank"
-                        class="btn btn-link">Abertura Ticket Suporte ONU / TP-LINK</a>
+                        class="btn btn-outline-info">Abertura Ticket Suporte ONU / TP-LINK <i class="bi bi-globe"></i></a>
                     </li>
                     <li class="list-group-item">
-                      <a href="https://app.asana.com/0/1203336242746784/board" target="_blank" class="btn btn-link">
-                        Acompanhar Ticket Suporte ONU / TP-LINK</a>
+                      <a href="https://app.asana.com/0/1203336242746784/board" target="_blank" class="btn btn-outline-info">
+                        Acompanhar Ticket Suporte ONU / TP-LINK  <i class="bi bi-globe"></i></a>
                     </li>
                     <li class="list-group-item">
                       <a href="https://docs.google.com/presentation/d/1a0lCYCCBJvPYjLQgVri2DyqXhqOgaZbUQDNhMgKjstc/edit#slide=id.g20faaae52ba_0_0"
-                        target="_blank" class="btn btn-link"> Material - Resolução de Problemas ONU / TP-LINK</a>
+                        target="_blank" class="btn btn-outline-info"> Material - Resolução de Problemas ONU / TP-LINK <i class="bi bi-globe"></i></a>
                     </li>
 
                   </ul>
@@ -171,19 +177,19 @@
                         <ul class="list-group">
                           <li class="list-group-item">
                             <a href="https://docs.google.com/presentation/d/1WMQFP_M8xklLzK9ExBSLUFFv-7DCPd3mWhYpgOmzzmk/edit#slide=id.g161c54a49d6_0_294"
-                              target="_blank" class="btn btn-link">Manual do Usuário</a>
+                              target="_blank" class="btn btn-outline-info">Manual do Usuário <i class="bi bi-globe"></i></a>
                           </li>
                           <li class="list-group-item">
                             <a href="https://www.brisanet.com.br/globoplay/como-ativar"
-                              target="_blank" class="btn btn-link">Ativação Passo a Passo</a>
+                              target="_blank" class="btn btn-outline-info">Ativação Passo a Passo <i class="bi bi-globe"></i></a>
                           </li>
                           <li class="list-group-item">
                             <a href="https://ajuda.globo.com/s/article/Como-alterar-o-e-mail-da-minha-assinatura"
-                              target="_blank" class="btn btn-link"> Como Alterar o E-mail?</a>
+                              target="_blank" class="btn btn-outline-info"> Como Alterar o E-mail? <i class="bi bi-globe"></i></a>
                           </li>
                           <li class="list-group-item">
                             <a href="https://ajuda.globo.com/s/article/Como-ativar-minha-assinatura-do-Globoplay-na-Smart-TV"
-                              target="_blank" class="btn btn-link"> Globoplay na Smart TV</a>
+                              target="_blank" class="btn btn-outline-info"> Globoplay na Smart TV <i class="bi bi-globe"></i></a>
                           </li>
                         </ul>
                       </div>
@@ -198,11 +204,11 @@
                         <ul class="list-group">
                           <li class="list-group-item">
                             <a href="https://docs.google.com/presentation/d/1EJLJGUKQWmeYOUAgLC12iyBxEzyMMDImnT4WjseUjWA/edit#slide=id.g1d133bd3c74_22_0"
-                              target="_blank" class="btn btn-link">Manual do Usuário</a>
+                              target="_blank" class="btn btn-outline-info">Manual do Usuário <i class="bi bi-globe"></i></a>
                           </li>
                           <li class="list-group-item">
                             <a href="https://www.figma.com/proto/atUCFINP9sfegbcrReSiLz/NETFLIX-ativa%C3%A7%C3%A3o?node-id=6-2&scaling=scale-down&page-id=0%3A1&starting-point-node-id=6%3A2&show-proto-sidebar=1"
-                              target="_blank" class="btn btn-link">Ativação Passo a Passo</a>
+                              target="_blank" class="btn btn-outline-info">Ativação Passo a Passo <i class="bi bi-globe"></i></a>
                           </li>
                         </ul>
                       </div>
@@ -232,15 +238,15 @@
                   <ul class="list-group">
                     <li class="list-group-item">
                       <a href="https://docs.google.com/forms/d/e/1FAIpQLSdOStjaDN5FZ73EaIYCxvA5PA5S3uPqWWWdaOM4ltNzzAamFQ/viewform"
-                        target="_blank" class="btn btn-link">Abertura Ticket IMOC / FTTH</a>
+                        target="_blank" class="btn btn-outline-info">Abertura Ticket IMOC / FTTH <i class="bi bi-globe"></i></a>
                     </li>
                     <li class="list-group-item">
                       <a href="https://docs.google.com/spreadsheets/d/1Rns1KEQr8Lv1H_KlieEK8mf93CUq5KAejBw6aZHk4xw/edit?resourcekey#gid=1456461879"
-                        target="_blank" class="btn btn-link"> Acompanhar Ticket IMOC / FTTH</a>
+                        target="_blank" class="btn btn-outline-info"> Acompanhar Ticket IMOC / FTTH <i class="bi bi-globe"></i></a>
                     </li>
                     <li class="list-group-item">
                       <a href="https://docs.google.com/spreadsheets/d/1wyjYI0GeGnGq5XAZvqGidNL5OOD95KLROhm-Jv8s5L4/edit#gid=474814574"
-                        target="_blank" class="btn btn-link"> Acompanhar Cobrança Ticket IMOC / FTTH</a>
+                        target="_blank" class="btn btn-outline-info"> Acompanhar Cobrança Ticket IMOC / FTTH <i class="bi bi-globe"></i></a>
                     </li>
 
                   </ul>
@@ -261,20 +267,20 @@
                   <ul class="list-group">
                     <li class="list-group-item">
                       <a href="https://docs.google.com/spreadsheets/d/108CeKc84WUCiP0Np6F8htHgwy7Y37jqlCq24LC0Y6no/edit#gid=607412012"
-                        target="_blank" class="btn btn-link"> IAT - Coordenador / Gestor / Supervisor</a>
+                        target="_blank" class="btn btn-outline-info">IAT - Coordenador / Gestor / Supervisor <i class="bi bi-globe"></i></a>
                     </li>
                     <li class="list-group-item">
                       <a href="https://docs.google.com/spreadsheets/d/1rrEh8qXBXzyjemZ2cR2wqOzdZsnAJY8wfUM_jVuEl6Q/edit#gid=1004202744"
-                        target="_blank" class="btn btn-link"> IAT - Agendador de Reparo</a>
+                        target="_blank" class="btn btn-outline-info">IAT - Agendador de Reparo <i class="bi bi-globe"></i></a>
                     </li>
                     <li class="list-group-item">
                       <a href="https://docs.google.com/spreadsheets/d/1jS5o5Rn8NZhR_0SCret_70bSQBkfRlifCxCijPRGluo/edit#gid=1513687005"
-                        target="_blank" class="btn btn-link"> IAT - Agendador de Instalação</a>
+                        target="_blank" class="btn btn-outline-info">IAT - Agendador de Instalação <i class="bi bi-globe"></i></a>
                     </li>
-
                   </ul>
                 </div>
               </div>
+              
             </div>
 
           </div>
@@ -286,5 +292,5 @@
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-
+,<script src="./js/index.js"></script>
 </html>
