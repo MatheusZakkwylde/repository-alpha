@@ -5,3 +5,17 @@ document.addEventListener("DOMContentLoaded", function() {
       new Image().src = src;
     }
   });
+
+  function adjustAccordionContainerHeight() {
+    const windowHeight = window.innerHeight;
+    const footerHeight = document.querySelector('footer').offsetHeight;
+    const container = document.querySelector('.container-fluid');
+    const containerTop = container.getBoundingClientRect().top;
+    const containerMarginBottom = parseInt(window.getComputedStyle(container).marginBottom);
+
+    const availableHeight = windowHeight - footerHeight - containerTop - containerMarginBottom;
+    container.style.maxHeight = availableHeight + 'px';
+  }
+
+  window.addEventListener('DOMContentLoaded', adjustAccordionContainerHeight);
+  window.addEventListener('resize', adjustAccordionContainerHeight);
