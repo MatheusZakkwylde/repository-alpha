@@ -2,363 +2,500 @@
 <html lang="pt-br">
 
 <head>
-  <title>Suporte Interno Alpha Team</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Suporte da equiṕe Alpha Team vizando soluções rápidas">
+    <meta name="author" content="Matheus Pinheiro Pereira">
 
-  <meta charset="UTF-8">
-  <meta name="description" content="Site de suporte da equiṕe Alpha Team vizando soluções rápidas">
-  <meta name="author" content="Matheus Pinheiro Pereira">
+    <!--ICONE PARA CELULAR-->
+    <link rel="apple-touch-icon" sizes="76x76" href="./img/imagem lobo branco.png">
+    <!--ICONE PARA SITE-->
+    <link rel="icon" type="image/png" href="./img/imagem lobo branco.png">
 
-
-  <link rel="apple-touch-icon" sizes="76x76" href="./img/icon.jpeg">
-  <link rel="icon" type="image/png" href="./img/icon.jpeg">
-
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="./css/index.css">
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <!--ESTILO PERSONALIZADO-->
+    <link rel="stylesheet" href="./css/index.css">
 </head>
 
 <body>
-  <div class="container-fluid">
-
-    <!--INICIO NAV BAR-->
     <header>
-      <nav class="navbar navbar-expand-lg">
-        <div id="logo-container" class="col-md-1">
-          <img class="navbar-brand img-fluid" src="./img/imagem lobo branco.png" alt="Logo Inicial">
-          <img class="navbar-brand img-fluid hover-img" src="./img/imagem lobo branco.png" alt="Logo com Mouse Hover">
-        </div>
-    
-        <div class="collapse navbar-collapse">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <h1>
-                <a class="nav-link mt-3" href="index.html"> Suporte Alpha Team</a>
-              </h1>
-            </li>
-          </ul>
-        </div>
-      </nav>
+        <nav class="navbar navbar-expand-lg">
+            <div id="logo-container" class="col-md-1">
+                <img class="navbar-brand img-fluid" src="./img/imagem lobo branco.png" alt="Logo Inicial">
+            </div>
+
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <h1>
+                            <a class="nav-link mt-3" href="index.html"> Suporte Alpha Team</a>
+                        </h1>
+                    </li>
+                </ul>
+            </div>
+        </nav>
     </header>
-    
-    <!--FIM NAV BAR-->
 
-    <section class="mt-4">
-      <div class="row">
-        
-        <div class="col-md-6">
+    <section class="content mb-2 mt-3">
+        <div class="row">
+            <!--INICIO DA COLUNA 01-->
+            <div class="col-md-6">
+                <!--INICIO DO ACORDEON-->
+                <div class="accordion" id="accordion">
+                    <!--CARD MONITORIA-->
+                    <div class="card accordion-item">
+                        <!--INICIO DO CABEÇAHO CARD-->
+                        <span class="accordion-header card-header" id="cabecalhomonitoria">
+                            <button class="accordion-button btn  btn-secondary btn-md text-white" type="button" data-bs-toggle="collapse" data-bs-target="#monitoria" aria-expanded="false" aria-controls="#monitoria">
+                                Atendimento / Monitoria de Qualidade  <span><i class="bi bi-search ml-2"></i> </span>
+                            </button>
+                        </span>
+                        <!--FIM DO CABEÇAHO CARD-->
 
-          <div class="accordion" id="data">
+                        <!--INICIO BODY CARD-->
+                        <div id="monitoria" class="card-body accordion-collapse collapse" aria-labelledby="#cabecalhomonitoria" data-bs-parent="#accordion">
+                            <div class="accordion-body">
+                                <!--INICIO DO ACORDEON CONTEÚDO DE ATENDIMENTO E MONITORIA-->
+                               <div class="accordion" id="accordin-item-monitoria">
+                                <ul class="list-group">
+                                    <li class="list-group-item">
+                                          <!--INICIO DO ITEM-->
+                                        <div class="accordion-item">
+                                            <!--INICIO CABEÇALHO ATENDIMENTO DE QUALIDADE-->
+                                            <span class="accordion-header" id="cabecalhoqualidade">
+                                            <button class="accordion-button btn  btn-secondary btn-md text-white" type="button" data-bs-toggle="collapse" data-bs-target="#qualidade" aria-expanded="false" aria-controls="#qualidade">
+                                                Atendimento de Qualidade <span><i class="bi bi-search ml-2"></i> </span>
+                                            </button>
+                                            </span>
+                                            <!--FIM CABEÇALHO ATENDIMENTO DE QUALIDADE-->
 
-            <!--CARD ATENDIMENTO-->
-            <div class="card">
+                                            <!--INICIO CORPO QUALIDADE-->
+                                            <div id="qualidade" class="accordion-collapse collapse" aria-labelledby="#cabecalhoqualidade" data-bs-parent="#accordin-item-monitoria">
+                                            <div class="accordion-body">
+                                                <!-- INICIO MATERIAL DE ESTUDOS DE ATENDIMENTO DE QUALIDADE-->
+                                                <ul class="list-group">
+                                                    <li class="list-group-item">
+                                                        <a href="https://docs.google.com/presentation/d/1HktDkrnd1bvylzntL3dWmpyPyahSzrp1zZ_e9rclfB0/edit?usp=sharing" target="_blank" class="btn btn-outline-info">Capacitar para Multiplicar <i class="bi bi-globe"></i></a>
+                                                    </li>
+                                                </ul>
+                                                <!-- INICIO MATERIAL DE ESTUDOS DE ATENDIMENTO DE QUALIDADE-->
+                                            </div>
+                                            </div>
+                                            <!--FIM CORPO QUALIDADE-->
+                                        </div>
+                                        <!--FIM DO ITEM-->
+                                    </li>
 
-              <div class="card-header" id="card-header">
-                <button class="btn  btn-secondary btn-md text-white" type="button" data-toggle="collapse" data-target="#atendimento" aria-controls="atendimento">
-                   Atendimento / Monitoria de Qualidade   <span><i class="bi bi-search ml-2"></i> </span>
-                </button>
-              </div>
+                                    <li class="list-group-item">
+                                        <!--INICIO DO INTEM-->
+                                        <div class="accordion-item">
+                                            <!--INICIO CABEÇALHO MONITORIA DE QUALIDADE-->
+                                            <span class="accordion-header" id="cabecalhomonitoriaqualidade">
+                                            <button class="accordion-button btn  btn-secondary btn-md text-white" type="button" data-bs-toggle="collapse" data-bs-target="#monitoriaqualidade" aria-expanded="false" aria-controls="#monitoriaqualidade">
+                                                Monitoria de Qualidade <span><i class="bi bi-search ml-2"></i> </span>
+                                            </button>
+                                            </span>
+                                            <!--FIM CABEÇALHO MONITORIA DE QUALIDADE-->
 
-              <div id="atendimento" class="collapse" aria-labelledby="atendimento" data-parent="#capacitar">
-                
-                <div class="card-body">
-                  <ul class="list-group">
-                    <li class="list-group-item">
-                      <button class="btn  btn-secondary btn-md text-white" type="button" data-toggle="collapse" data-target="#capacitar" aria-controls="capacitar">
-                        Atendimento de Qualidade <i class="bi bi-search"></i>
-                     </button>
-                     
-                     <div id="capacitar" class="collapse" aria-labelledby="capacitar" data-parent="#data">
-                       <ul class="list-group">
-                         <li class="list-group-item">
-                           <a href="https://docs.google.com/presentation/d/1HktDkrnd1bvylzntL3dWmpyPyahSzrp1zZ_e9rclfB0/edit?usp=sharing" target="_blank" class="btn btn-outline-info">
-                             Capacitar para Multiplicar <i class="bi bi-globe"></i>
-                           </a>
-                         </li>
-                       </ul>
-                     </div>
-                    </li>
-
-                    <li class="list-group-item">
-                      <button class="btn  btn-secondary btn-md text-white" type="button" data-toggle="collapse" data-target="#monitoria" aria-controls="monitoria">
-                        Monitoria de Qualidade <i class="bi bi-search"></i>
-                     </button>
-                     
-                     <div id="monitoria" class="collapse" aria-labelledby="monitoria" data-parent="#data">
-                       <ul class="list-group">
-                         <li class="list-group-item">
-                           <a href="https://docs.google.com/document/d/1UHTE0QJszITteieOBuCqSOX1O1kyDJqsh45v7wzDgq4/edit" target="_blank" class="btn btn-outline-info">
-                            Política Oficial de Atendimento - Monitoria de Qualidade <i class="bi bi-globe"></i>
-                           </a>
-
-                           <li class="list-group-item">
-                            <a href="https://drive.google.com/file/d/1Uax2Dh1AP1J2KG062zp409232hKm4axJ/view?usp=sharing" target="_blank" class="btn btn-outline-info">
-                             Treinamento Monitoria de Qualidade <i class="bi bi-globe"></i>
-                            </a>
-                          </li>
-                         </li>
-                       </ul>
-                     </div>
-                    </li>
-                  </ul>
-                  
-                </div>
-              </div>
-            </div>
-            <!-- FIM CARD ATENDIMENTO-->
-
-            <!--CARD SISTEMAS-->
-            <div class="card">
-              <div class="card-header " id="buttonaccordion1">
-                <button class="btn btn-secondary btn-md text-white" type="button" data-toggle="collapse" data-target="#sistema"
-                  aria-controls="collapse1">
-                  Sistemas de Atendimento <span><i class="bi bi-search ml-2"></i> </span>
-                </button>
-              </div>
-
-              <div id="sistema" class="collapse" aria-labelledby="buttonaccordion1" data-parent="#buttonaccordion1">
-                <div class="card-body">
-                  <ul class="list-group">
-                    <li class="list-group-item">
-                      <a href="https://siga.brisanet.net.br" target="_blank" class="btn btn-outline-info">SIGA - Sistema Integrado de Gestão de Atendimento <i class="bi bi-globe"></i></a>
-                    </li>
-                    <li class="list-group-item">
-                      <a href="https://brisanet.matrixdobrasil.ai" target="_blank" class="btn btn-outline-info">Matrix Mimi <i class="bi bi-globe"></i></a>
-                    </li>
-                    <li class="list-group-item">
-                      <a href="https://revan-atendimento.brisanet.net.br" target="_blank" class="btn btn-outline-info">Revan
-                        Atendimentos (Yoda) <i class="bi bi-globe"></i></a>
-                    </li>
-                    <li class="list-group-item">
-                      <a href="https://novorevan.brisanet.net.br" target="_blank" class="btn btn-outline-info">Novo Revan <i class="bi bi-globe"></i></a>
-                    </li>
-                    <li class="list-group-item">
-                      <a href="https://raumil.brisanet.net.br" target="_blank" class="btn btn-outline-info">Raumil <i class="bi bi-globe"></i></a>
-                    </li>
-                    <li class="list-group-item">
-                      <a href="https://saski.brisanet.net.br" target="_blank" class="btn btn-outline-info">Saski <i class="bi bi-globe"></i></a>
-                    </li>
-                    <li class="list-group-item">
-                      <a href="https://agendamento.brisanet.net.br" target="_blank" class="btn btn-outline-info">Painel 4.0 <i class="bi bi-globe"></i></a>
-                    </li>
-                    <li class="list-group-item">
-                      <a href="https://grupobrisanet.mybeehome.com" target="_blank" class="btn btn-outline-info">Universo Brisa <i class="bi bi-globe"></i></a>
-                    </li>
-                    <li class="list-group-item">
-                      <a href="https://universidadecorporativa.brisanet.net.br" target="_blank" class="btn btn-outline-info">Brisa EAD <i class="bi bi-globe"></i></a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-header" id="buttonaccordion2">
-                <h2 class="mb-0">
-                  <button class="btn  btn-secondary btn-md text-white" type="button" data-toggle="collapse" data-target="#collapse2"
-                    aria-controls="collapse2">
-                    Suporte ONU / TP-LINK <span><i class="bi bi-search ml-2"></i> </span>
-                  </button>
-                </h2>
-              </div>
-              <div id="collapse2" class="collapse" aria-labelledby="buttonaccordion2" data-parent="#accordionExample1">
-                <div class="card-body">
-                  <ul class="list-group">
-                    <li class="list-group-item">
-                      <a href="https://form.asana.com/?k=ZKtRz7T-MoFWSLZRpyuQUQ&d=1187238493337382" target="_blank"
-                        class="btn btn-outline-info">Abertura Ticket Suporte ONU / TP-LINK <i class="bi bi-globe"></i></a>
-                    </li>
-                    <li class="list-group-item">
-                      <a href="https://app.asana.com/0/1203336242746784/board" target="_blank" class="btn btn-outline-info">
-                        Acompanhar Ticket Suporte ONU / TP-LINK  <i class="bi bi-globe"></i></a>
-                    </li>
-                    <li class="list-group-item">
-                      <a href="https://docs.google.com/presentation/d/1a0lCYCCBJvPYjLQgVri2DyqXhqOgaZbUQDNhMgKjstc/edit#slide=id.g20faaae52ba_0_0"
-                        target="_blank" class="btn btn-outline-info"> Material - Resolução de Problemas ONU / TP-LINK <i class="bi bi-globe"></i></a>
-                    </li>
-
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-header" id="buttonaccordionApp">
-                <h2 class="mb-0">
-                  <button class="btn  btn-secondary btn-md text-white" type="button" data-toggle="collapse" data-target="#collapseApp"
-                    aria-controls="collapseApp">
-                     Aplicativos <span><i class="bi bi-search ml-2"></i> </span>
-                  </button>
-                </h2>
-              </div>
-              <div id="collapseApp" class="collapse" aria-labelledby="buttonaccordionAppG"
-                data-parent="#accordionExample1">
-                <div class="card-body">
-                  <ul class="list-group">
-                    <li class="list-group-item">
-                      <button class="btn" type="button" data-toggle="collapse" data-target="#collapseAppG"
-                        aria-controls="collapseAppG">
-                        <i class="bi bi-search"></i> GloboPlay
-                      </button>
-                      <div id="collapseAppG" class="collapse" aria-labelledby="buttonaccordionApp"
-                        data-parent="#accordionExample1">
-                        <ul class="list-group">
-                          <li class="list-group-item">
-                            <a href="https://docs.google.com/presentation/d/1WMQFP_M8xklLzK9ExBSLUFFv-7DCPd3mWhYpgOmzzmk/edit#slide=id.g161c54a49d6_0_294"
-                              target="_blank" class="btn btn-outline-info">Manual do Usuário <i class="bi bi-globe"></i></a>
-                          </li>
-                          <li class="list-group-item">
-                            <a href="https://www.brisanet.com.br/globoplay/como-ativar"
-                              target="_blank" class="btn btn-outline-info">Ativação Passo a Passo <i class="bi bi-globe"></i></a>
-                          </li>
-                          <li class="list-group-item">
-                            <a href="https://ajuda.globo.com/s/article/Como-alterar-o-e-mail-da-minha-assinatura"
-                              target="_blank" class="btn btn-outline-info"> Como Alterar o E-mail? <i class="bi bi-globe"></i></a>
-                          </li>
-                          <li class="list-group-item">
-                            <a href="https://ajuda.globo.com/s/article/Como-ativar-minha-assinatura-do-Globoplay-na-Smart-TV"
-                              target="_blank" class="btn btn-outline-info"> Globoplay na Smart TV <i class="bi bi-globe"></i></a>
-                          </li>
-                        </ul>
-                      </div>
-                    </li>
-                    <li class="list-group-item">
-                      <button class="btn" type="button" data-toggle="collapse" data-target="#collapseAppN"
-                        aria-controls="collapseAppN">
-                        <i class="bi bi-search"></i> NetFlix
-                      </button>
-                      <div id="collapseAppN" class="collapse" aria-labelledby="buttonaccordionAppN"
-                        data-parent="#accordionExample1">
-                        <ul class="list-group">
-                          <li class="list-group-item">
-                            <a href="https://docs.google.com/presentation/d/1EJLJGUKQWmeYOUAgLC12iyBxEzyMMDImnT4WjseUjWA/edit#slide=id.g1d133bd3c74_22_0"
-                              target="_blank" class="btn btn-outline-info">Manual do Usuário <i class="bi bi-globe"></i></a>
-                          </li>
-                          <li class="list-group-item">
-                            <a href="https://www.figma.com/proto/atUCFINP9sfegbcrReSiLz/NETFLIX-ativa%C3%A7%C3%A3o?node-id=6-2&scaling=scale-down&page-id=0%3A1&starting-point-node-id=6%3A2&show-proto-sidebar=1"
-                              target="_blank" class="btn btn-outline-info">Ativação Passo a Passo <i class="bi bi-globe"></i></a>
-                          </li>
-                        </ul>
-                      </div>
-
-                      <li class="list-group-item">
-                        <button class="btn" type="button" data-toggle="collapse" data-target="#premiere"
-                          aria-controls="collapseAppN">
-                          <i class="bi bi-search"></i> Premiere
-                        </button>
-
-                        <div id="premiere" class="collapse" aria-labelledby="data" data-parent="#data">
-                          <ul class="list-group">
-                            <li class="list-group-item">
-                              <a href="https://docs.google.com/presentation/d/1TFec9lBJK5DfZNbHSKZM4dHxc_bVY_LAqMhYXUTYRZ0/edit?usp=sharing"
-                                target="_blank" class="btn btn-outline-info">Manual do Usuário <i class="bi bi-globe"></i></a>
-                            </li>
-                            <li class="list-group-item">
-                              <a href="https://docs.google.com/presentation/d/1gsAT7FDnLVauETdmYn5ibvpa7cAXG7xgYduggIOTvuA/edit?usp=sharing"
-                                target="_blank" class="btn btn-outline-info">Ativação Passo a Passo <i class="bi bi-globe"></i></a>
-                            </li>
-                          </ul>
+                                            <!--INICIO CORPO MONITORIA DE QUALIDADE-->
+                                            <div id="monitoriaqualidade" class="accordion-collapse collapse" aria-labelledby="#cabecalhomonitoriaqualidade" data-bs-parent="#accordin-item-monitoria">
+                                                <div class="accordion-body">
+                                                    <!-- INICIO MATERIAL DE ESTUDOS DE ATENDIMENTO DE QUALIDADE-->
+                                                    <ul class="list-group">
+                                                        <li class="list-group-item">
+                                                            <a href="https://docs.google.com/document/d/1UHTE0QJszITteieOBuCqSOX1O1kyDJqsh45v7wzDgq4/edit" target="_blank" class="btn btn-outline-info">
+                                                                Política Oficial de Atendimento - Monitoria de Qualidade <i class="bi bi-globe"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li class="list-group-item">
+                                                            <a href="https://drive.google.com/file/d/1Uax2Dh1AP1J2KG062zp409232hKm4axJ/view?usp=sharing" target="_blank" class="btn btn-outline-info">
+                                                                Treinamento Monitoria de Qualidade <i class="bi bi-globe"></i>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                    <!-- FIM MATERIAL DE ESTUDOS DE ATENDIMENTO DE QUALIDADE-->
+                                                </div>
+                                            </div>
+                                            <!--FIM CORPO MONITORIA DE QUALIDADE QUALIDADE-->
+                                        </div>
+                                        <!--FIM DO ITEM-->
+                                    </li>
+                                </ul>
+                               </div>
+                               <!--FIM DO ACORDEON CONTEÚDO DE ATENDIMENTO E MONITORIA-->
+                            </div>
                         </div>
-                      </li>
+                    </div>
+                    <!--FIM CARD MONITORIA-->
 
-                      <li class="list-group-item">
-                        <button class="btn" type="button" data-toggle="collapse" data-target="#telecine"
-                          aria-controls="collapseAppN">
-                          <i class="bi bi-search"></i> Telecine
-                        </button>
+                   <!--CARD ITEM SISTEMAS-->
+                    <div class="accordion-item card">
+                        <!--INICIO CABEÇALHO SISTEMA-->
+                        <span class="accordion-header card-header" id="cabecalhosistema">
+                            <button class="accordion-button btn  btn-secondary btn-md text-white" type="button" data-bs-toggle="collapse" data-bs-target="#sistema" aria-expanded="false" aria-controls="#sistema">
+                                Sistemas de Atendimento <span><i class="bi bi-search ml-2"></i> </span>
+                            </button>
+                        </span>
+                        <!--FIM CABEÇALHO SISTEMA-->
 
-                        <div id="telecine" class="collapse" aria-labelledby="data" data-parent="#data">
-                          <ul class="list-group">
-                            <li class="list-group-item">
-                              <a href="https://docs.google.com/presentation/d/1TFec9lBJK5DfZNbHSKZM4dHxc_bVY_LAqMhYXUTYRZ0/edit?usp=sharing"
-                                target="_blank" class="btn btn-outline-info">Manual do Usuário <i class="bi bi-globe"></i></a>
-                            </li>
-                            <li class="list-group-item">
-                              <a href="https://docs.google.com/presentation/d/1gsAT7FDnLVauETdmYn5ibvpa7cAXG7xgYduggIOTvuA/edit?usp=sharing"
-                                target="_blank" class="btn btn-outline-info">Ativação Passo a Passo <i class="bi bi-globe"></i></a>
-                            </li>
-                          </ul>
+                        <!-- INICIO CORPO DOS SISTEMA-->
+                        <div id="sistema" class="card-body accordion-collapse collapse" aria-labelledby="#cabecalhosistema" data-bs-parent="#accordion">
+                            <div class="accordion-body">
+                                <ul class="list-group">
+                                    <li class="list-group-item">
+                                        <a href="https://siga.brisanet.net.br" target="_blank"
+                                            class="btn btn-outline-info">SIGA - Sistema Integrado de Gestão de
+                                            Atendimento <i class="bi bi-globe"></i></a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="https://brisanet.matrixdobrasil.ai" target="_blank"
+                                            class="btn btn-outline-info">Matrix Mimi <i class="bi bi-globe"></i></a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="https://revan-atendimento.brisanet.net.br" target="_blank"
+                                            class="btn btn-outline-info">Revan
+                                            Atendimentos (Yoda) <i class="bi bi-globe"></i></a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="https://novorevan.brisanet.net.br" target="_blank"
+                                            class="btn btn-outline-info">Novo Revan <i class="bi bi-globe"></i></a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="https://raumil.brisanet.net.br" target="_blank"
+                                            class="btn btn-outline-info">Raumil <i class="bi bi-globe"></i></a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="https://saski.brisanet.net.br" target="_blank"
+                                            class="btn btn-outline-info">Saski <i class="bi bi-globe"></i></a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="https://agendamento.brisanet.net.br" target="_blank"
+                                            class="btn btn-outline-info">Painel 4.0 <i class="bi bi-globe"></i></a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="https://grupobrisanet.mybeehome.com" target="_blank"
+                                            class="btn btn-outline-info">Universo Brisa <i class="bi bi-globe"></i></a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="https://universidadecorporativa.brisanet.net.br" target="_blank"
+                                            class="btn btn-outline-info">Brisa EAD <i class="bi bi-globe"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                      </li>
-                    </li>
-                  </ul>
+                        <!-- FIM CORPO DOS SISTEMA-->
+                    </div>
+                    <!-- FIM CARD ITEM SISTEMAS-->
 
+                     <!-- INICIO CARD ITEM TP-LINK-->
+                     <div class="accordion-item card">
+                          <!--INICIO CABEÇALHO TP-LINK-->
+                          <span class="accordion-header card-header" id="cabecalhotp-link">
+                            <button class="accordion-button btn  btn-secondary btn-md text-white" type="button" data-bs-toggle="collapse" data-bs-target="#tp-link" aria-expanded="false" aria-controls="#tp-link">
+                                Suporte ONU / TP-LINK <span><i class="bi bi-search ml-2"></i> </span>
+                            </button>
+                        </span>
+                        <!--FIM CABEÇALHO TP-LINK-->
+
+                         <!-- INICIO CORPO DOS TP-LINK-->
+                         <div id="tp-link" class="card-body accordion-collapse collapse" aria-labelledby="#cabecalhotp-link" data-bs-parent="#accordion">
+                            <div class="accordion-body">
+                                <ul class="list-group">
+                                    <li class="list-group-item">
+                                        <a href="https://form.asana.com/?k=ZKtRz7T-MoFWSLZRpyuQUQ&d=1187238493337382" target="_blank" class="btn btn-outline-info">
+                                            Abertura Ticket Suporte ONU / TP-LINK  <i class="bi bi-globe"></i>
+                                        </a>
+                                    </li>
+
+                                    <li class="list-group-item">
+                                        <a href="https://app.asana.com/0/1203336242746784/board" target="_blank" class="btn btn-outline-info">
+                                            Acompanhar Ticket Suporte ONU / TP-LINK  <i class="bi bi-globe"></i>
+                                        </a>
+                                    </li>
+
+                                    <li class="list-group-item">
+                                        <a href="https://docs.google.com/presentation/d/1a0lCYCCBJvPYjLQgVri2DyqXhqOgaZbUQDNhMgKjstc/edit#slide=id.g20faaae52ba_0_0" target="_blank" class="btn btn-outline-info">
+                                            Material - Resolução de Problemas ONU / TP-LINK  <i class="bi bi-globe"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                         </div>
+                         <!-- FIM CORPO DOS TP-LINK-->
+                    </div>
+                    <!--FIM CARD ITEM TP-LINK-->
+
+                    <!--INICIO CARD APLICATIVOS-->
+                    <div class="accordion-item card">
+                        <!--INICO CABEÇALHO APLICATIVOS-->
+                        <span class="accordion-header card-header" id="cabecalhotp-aplicativo">
+                            <button class="accordion-button btn  btn-secondary btn-md text-white" type="button" data-bs-toggle="collapse" data-bs-target="#aplicativo" aria-expanded="false" aria-controls="#aplicativo">
+                                Aplicativos <span><i class="bi bi-search ml-2"></i> </span>
+                            </button>
+                        </span>
+                        <!--FIM CABEÇALHO APLICATIVOS-->
+
+                        <!--INICIO CORPO APLICATIVO-->
+                        <div id="aplicativo" class="card-body accordion-collapse collapse" aria-labelledby="#cabecalhotp-aplicativo" data-bs-parent="#accordion">
+                            <div class="accordion-body">
+                                <!-- INICIO ACORDION APLICATIVOS INTERNOS-->
+                                <div class="accordion" id="accordion-item-aplicativo">
+                                    <!--INICIO DO ITEM GOBLOPLAY-->
+                                     <div class="accordion-item">
+                                        <ul class="list-group">
+                                            <li class="list-group-item">
+                                                 <!--INICO CABEÇALHO GLOBO PLAY-->
+                                                <span class="accordion-header" id="cabecalho-globoplay">
+                                                    <button class="accordion-button btn  btn-secondary btn-md text-white" type="button" data-bs-toggle="collapse" data-bs-target="#globoplay" aria-expanded="false" aria-controls="#globoplay">
+                                                        GloboPlay <span><i class="bi bi-search ml-2"></i> </span>
+                                                    </button>
+                                                </span>
+                                                <!--FIM CABEÇALHO GLOBO PLAY-->
+                                                <!--INICIO CORPO GLOBO PLAY-->
+                                                <div id="globoplay" class="accordion-collapse collapse" aria-labelledby="#cabecalho-globoplay" data-bs-parent="#accordion-item-aplicativo">
+                                                    <ul class="list-group">
+                                                        <li class="list-group-item">
+                                                            <a href="https://docs.google.com/presentation/d/1WMQFP_M8xklLzK9ExBSLUFFv-7DCPd3mWhYpgOmzzmk/edit#slide=id.g161c54a49d6_0_294" target="_blank" class="btn btn-outline-info">
+                                                                Manual do Usuário   <i class="bi bi-globe"></i>
+                                                            </a>
+                                                        </li>
+
+                                                        <li class="list-group-item">
+                                                            <a href="https://www.brisanet.com.br/globoplay/como-ativar" target="_blank" class="btn btn-outline-info">
+                                                                Ativação Passo a Passo    <i class="bi bi-globe"></i>
+                                                            </a>
+                                                        </li>
+
+                                                        <li class="list-group-item">
+                                                            <a href="https://ajuda.globo.com/s/article/Como-alterar-o-e-mail-da-minha-assinatura" target="_blank" class="btn btn-outline-info">
+                                                                Como Alterar o E-mail?   <i class="bi bi-globe"></i>
+                                                            </a>
+                                                        </li>
+
+                                                        <li class="list-group-item">
+                                                            <a href="https://ajuda.globo.com/s/article/Como-ativar-minha-assinatura-do-Globoplay-na-Smart-TV" target="_blank" class="btn btn-outline-info">
+                                                                Globoplay na Smart TV    <i class="bi bi-globe"></i>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <!--FIM CORPO GLOBO PLAY-->
+                                            </li>
+                                        </ul>
+                                     </div>
+                                     <!--FIM DO ITEM GLOBO PLAY-->
+
+                                     <!--INICIO DO ITEM NETFLIX-->
+                                     <div class="accordion-item">
+                                        <ul class="list-group">
+                                            <li class="list-group-item">
+                                                 <!--INICO CABEÇALHO NETFLIX-->
+                                                <span class="accordion-header" id="cabecalho-netflix">
+                                                    <button class="accordion-button btn  btn-secondary btn-md text-white" type="button" data-bs-toggle="collapse" data-bs-target="#netflix" aria-expanded="false" aria-controls="#netflix">
+                                                        NetFlix <span><i class="bi bi-search ml-2"></i> </span>
+                                                    </button>
+                                                </span>
+                                                <!--FIM CABEÇALHO NETFLIX-->
+
+                                                <!--INICIO CORPO NETFLIX-->
+                                                <div id="netflix" class="accordion-collapse collapse" aria-labelledby="#cabecalho-netflix" data-bs-parent="#accordion-item-aplicativo">
+                                                    <ul class="list-group">
+                                                        <li class="list-group-item">
+                                                            <a href="https://docs.google.com/presentation/d/1EJLJGUKQWmeYOUAgLC12iyBxEzyMMDImnT4WjseUjWA/edit#slide=id.g1d133bd3c74_22_0" target="_blank" class="btn btn-outline-info">
+                                                                Manual do Usuário   <i class="bi bi-globe"></i>
+                                                            </a>
+                                                        </li>
+
+                                                        <li class="list-group-item">
+                                                            <a href="https://www.figma.com/proto/atUCFINP9sfegbcrReSiLz/NETFLIX-ativa%C3%A7%C3%A3o?node-id=6-2&scaling=scale-down&page-id=0%3A1&starting-point-node-id=6%3A2&show-proto-sidebar=1" target="_blank" class="btn btn-outline-info">
+                                                                Ativação Passo a Passo    <i class="bi bi-globe"></i>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <!--FIM CORPO NETFLIX-->
+                                            </li>
+                                        </ul>
+                                     </div>
+                                     <!--FIM DO ITEM NETFLIX-->
+
+                                     <!--INICIO DO ITEM PREMIERE-->
+                                     <div class="accordion-item">
+                                        <ul class="list-group">
+                                            <li class="list-group-item">
+                                                 <!--INICO CABEÇALHO PREMIERE-->
+                                                <span class="accordion-header" id="cabecalho-premiere">
+                                                    <button class="accordion-button btn  btn-secondary btn-md text-white" type="button" data-bs-toggle="collapse" data-bs-target="#premiere" aria-expanded="false" aria-controls="#premiere">
+                                                        Premiere <span><i class="bi bi-search ml-2"></i> </span>
+                                                    </button>
+                                                </span>
+                                                <!--FIM CABEÇALHO PREMIERE-->
+
+                                                <!--INICIO CORPO PREMIERE-->
+                                                <div id="premiere" class="accordion-collapse collapse" aria-labelledby="#cabecalho-premiere" data-bs-parent="#accordion-item-aplicativo">
+                                                    <ul class="list-group">
+                                                        <li class="list-group-item">
+                                                            <a href="https://docs.google.com/presentation/d/1TFec9lBJK5DfZNbHSKZM4dHxc_bVY_LAqMhYXUTYRZ0/edit?usp=sharing" target="_blank" class="btn btn-outline-info">
+                                                                Manual do Usuário   <i class="bi bi-globe"></i>
+                                                            </a>
+                                                        </li>
+
+                                                        <li class="list-group-item">
+                                                            <a href="https://docs.google.com/presentation/d/1gsAT7FDnLVauETdmYn5ibvpa7cAXG7xgYduggIOTvuA/edit?usp=sharing" target="_blank" class="btn btn-outline-info">
+                                                                Ativação Passo a Passo    <i class="bi bi-globe"></i>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <!--FIM CORPO PREMIERE-->
+                                            </li>
+                                        </ul>
+                                     </div>
+                                     <!--FIM DO ITEM PREMIERE-->
+
+                                     <!--INICIO TELECINE-->
+                                     <div class="accordion-item">
+                                        <ul class="list-group">
+                                            <li class="list-group-item">
+                                                 <!--INICO CABEÇALHO TELECINE-->
+                                                <span class="accordion-header" id="cabecalho-telecine">
+                                                    <button class="accordion-button btn  btn-secondary btn-md text-white" type="button" data-bs-toggle="collapse" data-bs-target="#telecine" aria-expanded="false" aria-controls="#telecine">
+                                                        Telecine <span><i class="bi bi-search ml-2"></i> </span>
+                                                    </button>
+                                                </span>
+                                                <!--FIM CABEÇALHO TELECINE-->
+
+                                                <!--INICIO CORPO TELECINE-->
+                                                <div id="telecine" class="accordion-collapse collapse" aria-labelledby="#cabecalho-telecine" data-bs-parent="#accordion-item-aplicativo">
+                                                    <ul class="list-group">
+                                                        <li class="list-group-item">
+                                                            <a href="https://docs.google.com/presentation/d/1TFec9lBJK5DfZNbHSKZM4dHxc_bVY_LAqMhYXUTYRZ0/edit?usp=sharing" target="_blank" class="btn btn-outline-info">
+                                                                Manual do Usuário   <i class="bi bi-globe"></i>
+                                                            </a>
+                                                        </li>
+
+                                                        <li class="list-group-item">
+                                                            <a href="https://docs.google.com/presentation/d/1gsAT7FDnLVauETdmYn5ibvpa7cAXG7xgYduggIOTvuA/edit?usp=sharing" target="_blank" class="btn btn-outline-info">
+                                                                Ativação Passo a Passo    <i class="bi bi-globe"></i>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <!--FIM CORPO TELECINE-->
+                                            </li>
+                                        </ul>
+                                     </div>
+                                     <!--FIM TELECINE-->
+                                </div>
+                                <!-- FIM ACORDION APLICATIVOS INTERNOS-->
+                            </div>
+                        </div>
+                        <!--FIM CORPO APLICATIVO-->
+                    </div>
+                    <!--FIM CARD APLICATIVOS-->
                 </div>
-              </div>
+                <!--FIM DO ACORDEON-->
+            </div>
+             <!--FIM DA COLUNA 01-->
+
+            <!--INICIO DA COLUNA 02-->
+            <div class="col-md-6">
+                 <!--INICIO DO ACORDEON 02-->
+                 <div class="accordion" id="accordion02">
+                    <!--INICIO CARD ITEM IMOC-->
+                    <div class="card accordion-item">
+                       <!--INICIO DO CABEÇAHO CARD IMOC-->
+                       <span class="accordion-header card-header" id="cabecalhoimoc">
+                        <button class="accordion-button btn  btn-secondary btn-md text-white" type="button" data-bs-toggle="collapse" data-bs-target="#imoc" aria-expanded="false" aria-controls="#imoc">
+                            IMOC / FTTH  <span><i class="bi bi-search ml-2"></i> </span>
+                        </button>
+                        </span>
+                        <!--FIM DO CABEÇAHO CARD IMOC-->
+
+                        <!--INICIO CORPO IMOC-->
+                        <div id="imoc" class="card-body accordion-collapse collapse" aria-labelledby="#cabecalhoimoc" data-bs-parent="#accordion02">
+                            <div class="accordion-body">
+                                <ul class="list-group">
+                                    <li class="list-group-item">
+                                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdOStjaDN5FZ73EaIYCxvA5PA5S3uPqWWWdaOM4ltNzzAamFQ/viewform" target="_blank" class="btn btn-outline-info">
+                                            Abertura Ticket IMOC / FTTH   <i class="bi bi-globe"></i>
+                                        </a>
+                                    </li>
+
+                                    <li class="list-group-item">
+                                        <a href="https://docs.google.com/spreadsheets/d/1Rns1KEQr8Lv1H_KlieEK8mf93CUq5KAejBw6aZHk4xw/edit?resourcekey#gid=1456461879" target="_blank" class="btn btn-outline-info">
+                                            Acompanhar Ticket IMOC / FTTH   <i class="bi bi-globe"></i>
+                                        </a>
+                                    </li>
+
+                                    <li class="list-group-item">
+                                        <a href="https://docs.google.com/spreadsheets/d/1wyjYI0GeGnGq5XAZvqGidNL5OOD95KLROhm-Jv8s5L4/edit#gid=474814574" target="_blank" class="btn btn-outline-info">
+                                            Acompanhar Cobrança Ticket IMOC / FTTH  <i class="bi bi-globe"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!--FIM DO CORPO IMOC-->
+                    </div>
+                    <!--FIM CARD ITEM IMOC-->
+
+                    <!--INICIO CARD ITEM EXTERNO-->
+                    <div class="card accordion-item">
+                        <!--INICIO DO CABEÇAHO CARD EXTERNO-->
+                        <span class="accordion-header card-header" id="cabecalhoexterno">
+                         <button class="accordion-button btn  btn-secondary btn-md text-white" type="button" data-bs-toggle="collapse" data-bs-target="#externo" aria-expanded="false" aria-controls="#externo">
+                             Instalação / Reparo  <span><i class="bi bi-search ml-2"></i> </span>
+                         </button>
+                         </span>
+                         <!--FIM DO CABEÇAHO CARD EXTERNO-->
+ 
+                         <!--INICIO CORPO EXTERNO-->
+                         <div id="externo" class="card-body accordion-collapse collapse" aria-labelledby="#cabecalhoexterno" data-bs-parent="#accordion02">
+                             <div class="accordion-body">
+                                 <ul class="list-group">
+                                     <li class="list-group-item">
+                                         <a href="https://docs.google.com/spreadsheets/d/108CeKc84WUCiP0Np6F8htHgwy7Y37jqlCq24LC0Y6no/edit#gid=607412012" target="_blank" class="btn btn-outline-info">
+                                            IAT - Coordenador / Gestor / Supervisor   <i class="bi bi-globe"></i>
+                                         </a>
+                                     </li>
+ 
+                                     <li class="list-group-item">
+                                         <a href="https://docs.google.com/spreadsheets/d/1rrEh8qXBXzyjemZ2cR2wqOzdZsnAJY8wfUM_jVuEl6Q/edit#gid=1004202744" target="_blank" class="btn btn-outline-info">
+                                            IAT - Agendador de Reparo   <i class="bi bi-globe"></i>
+                                         </a>
+                                     </li>
+ 
+                                     <li class="list-group-item">
+                                         <a href="https://docs.google.com/spreadsheets/d/1jS5o5Rn8NZhR_0SCret_70bSQBkfRlifCxCijPRGluo/edit#gid=1513687005" target="_blank" class="btn btn-outline-info">
+                                            IAT - Agendador de Instalação  <i class="bi bi-globe"></i>
+                                         </a>
+                                     </li>
+                                 </ul>
+                             </div>
+                         </div>
+                         <!--FIM DO CORPO EXTERNO-->
+                     </div>
+                     <!--FIM CARD ITEM EXTERNO-->
+                 </div>
+            </div>
+            <!--FIM DA COLUNA 01-->
+        </div>
+    </section>
+
+    <footer>
+      <div class="container">
+          <div class="row">
+            <div class="col-md-12 text-center pt-4">
+              <p>&copy; 2023 Brisanet Telecomunicações SA. Todos os direitos reservados.</p>
             </div>
           </div>
-        </div>
-
-        <div class="col-md-6">
-
-          <div class="accordion" id="acordiondata">
-            <div class="card">
-              <div class="card-header" id="buttonaccordion3">
-                <button class="btn  btn-secondary btn-md text-white" type="button" data-toggle="collapse" data-target="#collapse3"
-                  aria-controls="collapse3">
-                   IMOC / FTTH <span><i class="bi bi-search ml-2"></i> </span>
-                </button>
-              </div>
-
-
-              <div id="collapse3" class="collapse" aria-labelledby="buttonaccordion3" data-parent="#buttonaccordion3">
-                <div class="card-body">
-                  <ul class="list-group">
-                    <li class="list-group-item">
-                      <a href="https://docs.google.com/forms/d/e/1FAIpQLSdOStjaDN5FZ73EaIYCxvA5PA5S3uPqWWWdaOM4ltNzzAamFQ/viewform"
-                        target="_blank" class="btn btn-outline-info">Abertura Ticket IMOC / FTTH <i class="bi bi-globe"></i></a>
-                    </li>
-                    <li class="list-group-item">
-                      <a href="https://docs.google.com/spreadsheets/d/1Rns1KEQr8Lv1H_KlieEK8mf93CUq5KAejBw6aZHk4xw/edit?resourcekey#gid=1456461879"
-                        target="_blank" class="btn btn-outline-info"> Acompanhar Ticket IMOC / FTTH <i class="bi bi-globe"></i></a>
-                    </li>
-                    <li class="list-group-item">
-                      <a href="https://docs.google.com/spreadsheets/d/1wyjYI0GeGnGq5XAZvqGidNL5OOD95KLROhm-Jv8s5L4/edit#gid=474814574"
-                        target="_blank" class="btn btn-outline-info"> Acompanhar Cobrança Ticket IMOC / FTTH <i class="bi bi-globe"></i></a>
-                    </li>
-
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-header" id="buttonaccordion4">
-
-                <button class="btn  btn-secondary btn-md text-white" type="button" data-toggle="collapse" data-target="#collapse4"
-                  aria-controls="collapse4">
-                    Instalação / Reparo  <i class="bi bi-search"></i>
-                </button>
-
-              </div>
-              <div id="collapse4" class="collapse" aria-labelledby="buttonaccordion4" data-parent="#buttonaccordion4">
-                <div class="card-body">
-                  <ul class="list-group">
-                    <li class="list-group-item">
-                      <a href="https://docs.google.com/spreadsheets/d/108CeKc84WUCiP0Np6F8htHgwy7Y37jqlCq24LC0Y6no/edit#gid=607412012"
-                        target="_blank" class="btn btn-outline-info">IAT - Coordenador / Gestor / Supervisor <i class="bi bi-globe"></i></a>
-                    </li>
-                    <li class="list-group-item">
-                      <a href="https://docs.google.com/spreadsheets/d/1rrEh8qXBXzyjemZ2cR2wqOzdZsnAJY8wfUM_jVuEl6Q/edit#gid=1004202744"
-                        target="_blank" class="btn btn-outline-info">IAT - Agendador de Reparo <i class="bi bi-globe"></i></a>
-                    </li>
-                    <li class="list-group-item">
-                      <a href="https://docs.google.com/spreadsheets/d/1jS5o5Rn8NZhR_0SCret_70bSQBkfRlifCxCijPRGluo/edit#gid=1513687005"
-                        target="_blank" class="btn btn-outline-info">IAT - Agendador de Instalação <i class="bi bi-globe"></i></a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              
-            </div>
-
-          </div>
-        </div>
       </div>
-    </section>   
-  </div>
-  
+    </footer>      
 </body>
-
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-,<script src="./js/index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </html>
