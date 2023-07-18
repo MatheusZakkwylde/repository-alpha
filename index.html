@@ -19,12 +19,13 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg">
-            <div id="logo-container" class="col-md-1">
-                <img class="navbar-brand img-fluid" src="./img/imagem lobo branco.png" alt="Logo Inicial">
-            </div>
+        <nav class="navbar navbar-expand-md">
 
             <div class="collapse navbar-collapse">
+                <div id="logo-container" class="col-md-2">
+                    <img class="img-fluid" src="./img/imagem lobo branco.png" alt="Logo Inicial">
+                </div>
+
                 <ul class="navbar-nav">
                     <li class="nav-item">
                         <h1>
@@ -33,6 +34,18 @@
                     </li>
                 </ul>
             </div>
+
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item">
+                    <a class="nav-link"  href="./view/setor-view.html">
+                        <button class="btn btn-nav btn-secondary btn-md text-white" type="button">
+                            <span><i class="bi bi-headset ml-2"></i> Setores </span>
+                        </button>
+                    </a>
+                  </li>
+                </ul>
+              </div>
         </nav>
     </header>
 
@@ -108,7 +121,7 @@
                         <!--INICIO CABEÇALHO PROCESSO-->
                         <span class="accordion-header card-header" id="cabecalhoprocesso">
                         <button class="accordion-button btn  btn-secondary btn-md text-white" type="button" data-bs-toggle="collapse" data-bs-target="#processo" aria-expanded="false" aria-controls="#processo">
-                            Processos / Regras Internas <span><i class="bi bi-search ml-2"></i> </span>
+                            Processos / Regras Internas / Prestação de Serviços <span><i class="bi bi-search ml-2"></i> </span>
                         </button>
                     </span>
                     <!--FIM CABEÇALHO  PROCESSO-->
@@ -117,6 +130,23 @@
                     <div id="processo" class="card-body accordion-collapse collapse" aria-labelledby="#cabecalhoprocesso" data-bs-parent="#accordion">
                         <div class="accordion-body">
                             <ul class="list-group">
+                                <li class="list-group-item">
+                                    <a href="https://docs.google.com/document/d/1b6ccovW00PIaGi3NIDQWrJuHz8Lzt52as_RjRECb4vk/edit?usp=sharing" target="_blank" class="btn btn-outline-info">
+                                        Termo de Resposabilidade <i class="bi bi-globe"></i>
+                                    </a>
+                                </li>
+
+                                <li class="list-group-item">
+                                    <a href="https://docs.google.com/document/d/1xBRToe-Mi3oZW2Zl6a1M2eFY0m_6ff8X/edit?usp=sharing&ouid=114021083883399434156&rtpof=true&sd=true" target="_blank" class="btn btn-outline-info">
+                                        Lei Geral de Proteção de Dados Pessoais (LGPD) <i class="bi bi-globe"></i>
+                                    </a>
+                                </li>
+
+                                <li class="list-group-item">
+                                    <a href="https://docs.google.com/document/d/1b6ccovW00PIaGi3NIDQWrJuHz8Lzt52as_RjRECb4vk/edit?usp=sharing" target="_blank" class="btn btn-outline-info">
+                                        Protocolos Yoda (2.0) <i class="bi bi-globe"></i>
+                                    </a>
+                                </li>
 
                                 <li class="list-group-item">
                                     <a href="https://docs.google.com/document/d/1pjS5I2a2y1ueG-_H1rvlzHImWf1jIw5wDi_sNWqqY8o/edit" target="_blank" class="btn btn-outline-info">
@@ -133,6 +163,42 @@
                                 <li class="list-group-item">
                                     <a href="https://drive.google.com/file/d/1HUAuHmOpIp_CeMYi2uxHe1G40M3Rxzof/view?usp=sharing" target="_blank" class="btn btn-outline-info">
                                         Manual Chamados Duplicados <i class="bi bi-globe"></i>
+                                    </a>
+                                </li>
+
+                                <li class="list-group-item">
+                                    <a href="https://www.brisanet.com.br/centro-de-privacidade" target="_blank" class="btn btn-outline-info">
+                                        Centro de Privacidade da Brisanet <i class="bi bi-globe"></i>
+                                    </a>
+                                </li>
+
+                                <li class="list-group-item">
+                                    <a href="https://www.gov.br/anatel/pt-br/consumidor/anatel-explica" target="_blank" class="btn btn-outline-info">
+                                        ANATEL - Anatel Explica (Site Oficial) <i class="bi bi-globe"></i>
+                                    </a>
+                                </li>
+
+                                <li class="list-group-item">
+                                    <a href="https://docs.google.com/document/d/1NaVXARjGhpJ-l0424yFJwv-P23Dcp0mwxs8YP-sV8nE/edit?usp=sharing" target="_blank" class="btn btn-outline-info">
+                                        ANATEL - Plano de Internet (Regras) <i class="bi bi-globe"></i>
+                                    </a>
+                                </li>
+
+                                <li class="list-group-item">
+                                    <a href="https://sistemas.anatel.gov.br/anexar-api/publico/anexos/download/cf706498736a3190f8734e86c1c7d955" target="_blank" class="btn btn-outline-info">
+                                        ANATEL - Plano Pelo WI-FI <i class="bi bi-globe"></i>
+                                    </a>
+                                </li>
+
+                                <li class="list-group-item">
+                                    <a href="https://sistemas.anatel.gov.br/anexar-api/publico/anexos/download/a11c833a13469d0d13a0aa2f489b5c0a" target="_blank" class="btn btn-outline-info">
+                                        ANATEL - Implantação de IPv6 <i class="bi bi-globe"></i>
+                                    </a>
+                                </li>
+
+                                <li class="list-group-item">
+                                    <a href="https://www.anatel.gov.br/Portal/verificaDocumentos/documentoVersionado.asp?numeroPublicacao=291474&documentoPath=291474.pdf&Pub=&URL=/Portal/verificaDocumentos/documento.asp" target="_blank" class="btn btn-outline-info">
+                                        ANATEL - Direitos do Usuário, Deveres da Prestadoras <i class="bi bi-globe"></i>
                                     </a>
                                 </li>
                             </ul>
@@ -989,6 +1055,18 @@
                                     </li>
 
                                     <li class="list-group-item">
+                                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSezeLhFUVyh-3W1mkPAxUOBp623O5Yx6Re12vcH0jKpSUFE2g/viewform" target="_blank" class="btn btn-outline-info">
+                                            Abrir Ticket Externo DROP  <i class="bi bi-globe"></i>
+                                        </a>
+                                    </li>
+
+                                    <li class="list-group-item">
+                                        <a href="https://docs.google.com/spreadsheets/d/15OFRfigb8Z4Obs7WwXBmmCXiSGJDBfmd1oIH3vC4wyY/edit?usp=sharing" target="_blank" class="btn btn-outline-info">
+                                            Ver Ticket Externo DROP  <i class="bi bi-globe"></i>
+                                        </a>
+                                    </li>
+
+                                    <li class="list-group-item">
                                         <a href="https://docs.google.com/document/d/1lPloNmiYAhaphLmy_xsuHddr7yiuzWvbQ58V4DcdYhk/edit?usp=sharing" target="_blank" class="btn btn-outline-info">
                                         Fibra Óptica - Manual Sinal Irregular <i class="bi bi-globe"></i>
                                         </a>
@@ -1162,6 +1240,18 @@
                                  <ul class="list-group">
 
                                     <li class="list-group-item">
+                                        <a href="https://form.asana.com/?k=9wTeLvYmjrQKNC34hk8e5Q&d=1187238493337382" target="_blank" class="btn btn-outline-info"  data-toggle="tooltip" title="Apenas lideres podem abrir chamado para TV. Por gentileza colaborador, solicitar ao seu líder" >
+                                           Abrir Ticket TV BOX  <i class="bi bi-globe"></i>
+                                        </a>
+                                    </li>
+                                
+                                    <li class="list-group-item">
+                                        <a href="https://app.asana.com/0/1202699523178246/list" target="_blank" class="btn btn-outline-info" data-toggle="tooltip" title="Apenas lideres podem  ver os chamados de TV.">
+                                           Ver Ticket TV BOX  <i class="bi bi-globe"></i>
+                                        </a>
+                                    </li>
+
+                                    <li class="list-group-item">
                                         <a href="https://docs.google.com/document/d/1Ay8Ns9BPv99_Fz7ZDrZ-MWq_X3kanhG1ciHLIMtUaSA/edit?usp=sharing" target="_blank" class="btn btn-outline-info">
                                            Manual TV BOX  <i class="bi bi-globe"></i>
                                         </a>
@@ -1182,6 +1272,7 @@
                  </div>
             </div>
             <!--FIM DA COLUNA 01-->
+            
         </div>
     </section>
 
