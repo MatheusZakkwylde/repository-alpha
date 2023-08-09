@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Suporte da equiṕe Alpha Team vizando soluções rápidas">
+  <meta name="author" content="Matheus Pinheiro Pereira">
+
+  <!--ICONE PARA CELULAR-->
+  <link rel="apple-touch-icon" sizes="76x76" href="../static/img/lobo-icon.webp">
+  <!--ICONE PARA SITE-->
+  <link rel="icon" type="image/png" href="../static/img/lobo-icon.webp">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <!--PERSSONALIZAÇÃO-->
+  <link rel="stylesheet" href="../static/css/template.css">
+  <link rel="stylesheet" href="../static/css/navbar.css">
+  <link rel="stylesheet" href="../static/css/sidebar.css">
+  <link rel="stylesheet" href="../static/css/accordion.css">
+  <link rel="stylesheet" href="../static/css/modal.css">
+  <link rel="stylesheet" href="../static/css/icon.css">
+</head>
+
+<body>
+    <!--INICIO NAV-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+
+      <button class="navbar-toggler" type="button" id="toggleBtn">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <a class="navbar-brand" href="../view/home-view.html">
+        <!-- LOGO -->
+        <img src="../static/img/lobo-icon-phone.png" alt="Lobo Alpha" width="60" height="60" class="d-inline-block">
+        <span class="ml-3">Alpha Team Suporte </span>
+      </a>
+
+      <div class="collapse navbar-collapse justify-content-end">
+        <!-- TEXTAR PORTAS DE SERVIÇO -->
+        <form class="form-inline">
+
+          <div class="single-input" data-toggle="tooltip" title="Adicione Portas separadas por virgula simples.">
+            <input type="text" name="port" id="port-box" class="input form-control" autocomplete="off" required>
+            <label for="port-box"> NOC Portas</label>
+          </div>
+
+          <button class="btn btn-outline-light" type="button" onclick="ports()"><i class="bi bi-search"></i></button>
+        </form>
+      </div>
+    </nav>
+    <!--FIM DA NAV-->
+
+    <div id="content-body">
+      <div class="container-fluid">
+        <div class="row">
+          <!-- Navbar lateral -->
+          <nav id="sidebar" class="col-md-2 bg-dark sidebar">
+            <div class="sidebar-body">
+              <ul class="nav nav-pills flex-column">
+                <li class="nav-item dashboard-sidebar">
+                  <a class="nav-link active" href="../view/home-view.html" aria-current="page"><i class="bi bi-speedometer2"></i> Dashboard</a>
+                </li>
+
+                  <li class="nav-item btn-sidebar">
+                    <a class="nav-link" href="../view/home-view.html"> <i class="bi bi-house-door"></i> Home</a>
+                 </li>
+                 <!--
+                 <li class="nav-item btn-sidebar">
+                  <a class="nav-link" href="#"> <i class="bi bi-headset"></i> Setores</a>
+                 </li>
+                -->
+
+                 <li class="nav-item footer-sidebar">
+                  <a class="nav-link" href="#"></a>
+                 </li>
+              </ul>
+            </div>
+          </nav>
+          <!--Fim NavBar lateral-->
+
+          <!-- Conteúdo da página -->
+          <main class="ms-sm-auto col-lg-12 px-md-4 body-accordion">
+            <div class="row pt-5">
+              <div class="body-abstract-one col-lg-3 ml-5"></div>
+      
+              <!--Inicio da segunda caixa-->
+              <div class="body-dimension col-lg-3">
+                <!--Inicio do accordion-->
+                <ul class="list-group accordion-menu" id="accordion-info">
+                 
+                  <!--Inicio do ponto-->
+                  <li class="list-group-item accordion-item">
+                    <span id="accordion-header-ponto" class="accordion-btn btn" data-toggle="collapse" data-target="#id-ponto" aria-expanded="true" aria-controls="id-ponto">
+                      <i class="icon bi  bi-clock"></i>
+                      <span class="icon-name">Ponto</span>
+                    </span>
+                    
+                    <div id="id-ponto" class="collapse accordion-smenu" aria-labelledby="accordion-header-ponto" data-parent="#accordion-info">
+                      <a href="#" id="usuario-ponto" target="_blank" >
+                          <i class=" icon bi bi-person-circle"></i>
+                          <span class="icon-name">Usuário</span>
+                      </a>
+                      
+                      <a href="#" id="registro-ponto" target="_blank" >
+                        <i class="icon bi  bi-clock"></i>
+                        <span class="icon-name">Registrar</span>
+                       </a>
+                    </div>
+                  </li>  
+                  <!--fim do ponto-->  
+
+                  <!--Inicio da jornada-->
+                  <li class="list-group-item accordion-item">
+                    <span id="accordion-header-jornada" class="accordion-btn btn" data-toggle="collapse" data-target="#id-jornada" aria-expanded="true" aria-controls="id-jornada">
+                      <i class="icon bi  bi-clock"></i>
+                      <span class="icon-name">Jornada</span>
+                    </span>
+                    
+                    <div id="id-jornada" class="collapse accordion-smenu" aria-labelledby="accordion-header-jornada" data-parent="#accordion-info">
+                      <a href="#" id="jornada" target="_blank" >
+                         <i class="icon bi bi-clock"></i>
+                         <span class="icon-name">Trabalho</span>
+                        </a>
+                    </div>
+                  </li>  
+                  <!--fim da jornada-->
+                  
+                  <!--Inicio da serviço-->
+                  <li class="list-group-item accordion-item">
+                    <span id="accordion-header-servico" class="accordion-btn btn" data-toggle="collapse" data-target="#id-servico" aria-expanded="true" aria-controls="id-servico">
+                      <i class="icon bi bi-book"></i> 
+                      <span class="icon-name">Processo</span>
+                    </span>
+                    
+                    <div id="id-servico" class="collapse accordion-smenu" aria-labelledby="accordion-header-servico" data-parent="#accordion-info">
+                      <a href="#" target="_blank" id="protocolo-atendimento" >
+                         <i class="icon bi bi-headset"></i> 
+                         <span class="icon-name">Protocolo de Atendimento</span>
+                      </a>
+
+                      <a href="#" target="_blank" id="termoresponsabilidade" >
+                         <i class=" icon bi bi-award"></i>
+                         <span class="icon-name">Termo de Responsabilidade</span>
+                      </a>
+
+                      <a href="#" target="_blank" id="lgpd" >
+                         <i class="icon bi bi-file-earmark-lock"></i>
+                         <span class="icon-name">LGPD - Proteção de Dados</span>
+                      </a>
+
+                      <a href="#" target="_blank" id="centro-privacidade" >
+                        <i class=" icon bi bi-file-earmark-lock"></i>
+                        <span class="icon-name">Centro de Privacidade</span>
+                      </a>
+
+                      <a href="#" target="_blank" id="manual-processo" > 
+                        <i class="icon bi bi-book"></i> 
+                        <span class="icon-name">Manual De Processos</span>
+                      </a>
+
+                      <a href="#" target="_blank" id="manual-painel4.0" >
+                         <i class="icon bi bi-book"></i> 
+                         <span class="icon-name">Manual Painel 4.0</span>
+                      </a>
+
+                      <a href="#" target="_blank" id="manual-duplicado" > 
+                        <i class="icon bi bi-book"></i>
+                        <span class="icon-name">Manual Chamados Duplicados</span>
+                      </a>
+                    </div>
+                  </li>  
+                  <!--fim da serviço--> 
+
+                  <!--Inicio da serviço-->
+                  <li class="list-group-item accordion-item">
+                    <span id="accordion-header-sistema" class="accordion-btn btn" data-toggle="collapse" data-target="#id-sistema" aria-expanded="true" aria-controls="id-sistema">
+                      <i class="icon bi bi-gear"></i>
+                      <span class="icon-name">Sistema</span>
+                    </span>
+                    
+                    <div id="id-sistema" class="collapse accordion-smenu" aria-labelledby="accordion-header-sistema" data-parent="#accordion-info">
+                      <a href="#" target="_blank" id="siga" >
+                        <div class="icon-container">
+                          <div class="icon icon-img-siga"></div>
+                          <span class="icon-name">Siga</span>
+                        </div>
+                      </a>
+
+                      <a href="#" target="_blank" id="painel4.0" >
+                        <div class="icon-container">
+                          <div class="icon icon-img-painel"></div>
+                          <span class="icon-name">Painel 4.0</span>
+                        </div>
+                      </a>
+
+                      <a href="#" target="_blank" id="receita" >
+                        <div class="icon-container">
+                          <div class="icon icon-img-receitafederal"></div>
+                          <span class="icon-name">Receita Federal</span>
+                        </div>
+                      </a>
+
+                      <a href="#" target="_blank" id="downdedector" >
+                        <div class="icon-container">
+                          <div class="icon icon-img-downdedector"></div>
+                          <span class="icon-name">Downdedector</span>
+                        </div>
+                      </a>
+
+                      <a href="#" target="_blank" id="matrix" >
+                        <div class="icon-container">
+                          <div class="icon icon-img-matrix"></div>
+                          <span class="icon-name">Matrix Omini</span>
+                        </div>
+                      </a>
+
+                      <a href="#" target="_blank" id="raumil" >
+                        <div class="icon-container">
+                          <div class="icon icon-img-raumil"></div>
+                          <span class="icon-name">Raumil</span>
+                        </div>
+                      </a>
+
+                      <a href="#" target="_blank" id="cact" >
+                        <div class="icon-container">
+                          <div class="icon icon-img-cact"></div>
+                          <span class="icon-name">Cact</span>
+                        </div>
+                      </a>
+
+                      <a href="#" target="_blank" id="totvs" >
+                        <div class="icon-container">
+                          <div class="icon icon-img-totvs"></div>
+                          <span class="icon-name">Tot Vs RH</span>
+                        </div>
+                      </a>
+
+                      <a href="#" target="_blank" id="tiflux" >
+                        <div class="icon-container">
+                          <div class="icon icon-img-tiflux"></div>
+                          <span class="icon-name">Tiflux</span>
+                        </div>
+                      </a>
+
+                      <a href="#" target="_blank" id="universobrisa" >
+                        <div class="icon-container">
+                          <div class="icon icon-img-universo"></div>
+                          <span class="icon-name">Universo Brisa</span>
+                        </div>
+                      </a>
+
+                      <a href="#" target="_blank" id="setor" >
+                        <div class="icon-container">
+                          <div class="icon icon-img-setor"></div>
+                          <span class="icon-name">Setores</span>
+                        </div>
+                      </a>
+
+                      <a href="#" target="_blank" id="suporteinterno" >
+                        <div class="icon-container">
+                          <div class="icon icon-img-suporteinterno"></div>
+                          <span class="icon-name">Suporte Técnico Interno</span>
+                        </div>
+                      </a>
+
+                      <a href="#" target="_blank" id="revan" >
+                        <div class="icon-container">
+                          <div class="icon icon-img-revan"></div>
+                          <span class="icon-name">Revan</span>
+                        </div>
+                      </a>
+
+                      <a href="#" target="_blank" id="yoda" >
+                        <div class="icon-container">
+                          <div class="icon icon-img-yoda"></div>
+                          <span class="icon-name">Yoda</span>
+                        </div>
+                      </a>
+                  
+                      <a href="#" target="_blank" id="estoque" >
+                        <div class="icon-container">
+                          <div class="icon icon-img-estoque"></div>
+                          <span class="icon-name">Estoque</span>
+                        </div>
+                      </a>
+
+                      <a href="#" target="_blank" id="saski" >
+                        <div class="icon-container">
+                          <div class="icon icon-img-saski"></div>
+                          <span class="icon-name">Saski</span>
+                        </div>
+                      </a>
+                     
+                      <a href="#" target="_blank" id="brisaead" >
+                        <div class="icon-container">
+                          <div class="icon icon-img-brisaead"></div>
+                          <span class="icon-name">Brisa EAD</span>
+                        </div>
+                      </a>
+                    </div>
+                  </li>  
+                  <!--fim da serviço--> 
+
+                  <!--Inicio do app-->
+                  <li class="list-group-item accordion-item" id="accordion-info-smenu">
+                    <span id="accordion-header-app" class="accordion-btn btn" data-toggle="collapse" data-target="#id-app" aria-expanded="true" aria-controls="id-app">
+                      <i class="icon bi bi-bag"></i>
+                      <span class="icon-name"> Produto</span>
+                    </span>
+                    
+                    <div id="id-app" class="collapse accordion-smenu" aria-labelledby="accordion-header-app" data-parent="#accordion-info">
+                      <!--Inicio Brisa Cliente-->
+                      <span id="accordion-header-brisa" class="accordion-btn-smenu btn" data-toggle="collapse" data-target="#id-brisa" aria-expanded="true" aria-controls="id-brisa">
+                        <div class="icon-container">
+                          <div class="icon icon-img-brisa"></div>
+                          <span class="icon-name"> BrisaCliente</span>
+                        </div>
+                      </span>
+
+                      <div id="id-brisa" class="collapse" aria-labelledby="accordion-header-brisa" data-parent="#accordion-info-smenu">
+                        <a href="#" id="brisaweb" class="accordion-smenu-text" target="_blank" ><i class=" icon bi bi-globe"></i><span class="icon-name"> App Web</span></a>
+                        <a href="#" id="brisamanual" class="accordion-smenu-text" target="_blank" ><i class=" icon bi bi-book"></i><span class="icon-name"> Manual</span></a>
+                      </div>
+                       <!--Fim Brisa Cliente-->
+
+                        <!--Inicio Brisa Play-->
+                      <span id="accordion-header-brisaplay" class="accordion-btn-smenu btn" data-toggle="collapse" data-target="#id-brisaplay" aria-expanded="true" aria-controls="id-brisaplay">
+                        <div class="icon-container">
+                          <div class="icon icon-img-brisaplay"></div>
+                          <span class="icon-name"> BrisaPlay</span>
+                        </div>
+                      </span>
+
+                      <div id="id-brisaplay" class="collapse" aria-labelledby="accordion-header-brisaplay" data-parent="#accordion-info-smenu">
+                        <a href="#" id="brisaplayweb" class="accordion-smenu-text" target="_blank" ><i class=" icon bi bi-globe"></i><span class="icon-name"> App Web</span></a>
+                        <a href="#" id="brisaplaymanual" class="accordion-smenu-text" target="_blank" ><i class=" icon bi bi-book"></i><span class="icon-name"> Manual</span></a>
+                        <a href="#" id="brisaplayativar" class="accordion-smenu-text" target="_blank" ><i class="icon bi bi-power"></i><span class="icon-name"> Ativação</span></a>
+                      </div>
+                       <!--Fim Brisa Play-->
+
+                      <!--Inicio Brisa Music-->
+                      <span id="accordion-header-brisamusic" class="accordion-btn-smenu btn" data-toggle="collapse" data-target="#id-brisamusic" aria-expanded="true" aria-controls="id-brisamusic">
+                        <div class="icon-container">
+                          <div class="icon icon-img-brisamusic"></div>
+                          <span class="icon-name"> BrisaMusic</span>
+                        </div>
+                      </span>
+
+                      <div id="id-brisamusic" class="collapse" aria-labelledby="accordion-header-brisamusic" data-parent="#accordion-info-smenu">
+                        <a href="#" id="brisamusicweb" class="accordion-smenu-text" target="_blank" ><i class=" icon bi bi-globe"></i><span class="icon-name"> App Web</span></a>
+                        <a href="#" id="brisamusicmanual" class="accordion-smenu-text" target="_blank" ><i class=" icon bi bi-book"></i><span class="icon-name"> Manual</span></a>
+                        <a href="#" id="brisamusicativar" class="accordion-smenu-text" target="_blank" ><i class="icon bi bi-power"></i><span class="icon-name"> Ativação</span></a>
+                      </div>
+                       <!--Fim Brisa Music-->
+
+                       <!--Inicio HeroApp-->
+                      <span id="accordion-header-heroapp" class="accordion-btn-smenu btn" data-toggle="collapse" data-target="#id-heroapp" aria-expanded="true" aria-controls="id-heroapp">
+                        <div class="icon-container">
+                          <div class="icon icon-img-heroapp"></div>
+                          <span class="icon-name"> HeroApp</span>
+                        </div>
+                      </span>
+
+                      <div id="id-heroapp" class="collapse" aria-labelledby="accordion-header-heroapp" data-parent="#accordion-info-smenu">
+                        <a href="#" id="heroappweb" class="accordion-smenu-text" target="_blank" ><i class=" icon bi bi-globe"></i><span class="icon-name"> App Web</span></a>
+                        <a href="#" id="heroappmanual" class="accordion-smenu-text" target="_blank" ><i class=" icon bi bi-book"></i><span class="icon-name"> Manual</span></a>
+                        <a href="#" id="heroappativar" class="accordion-smenu-text" target="_blank" ><i class="icon bi bi-power"></i><span class="icon-name"> Ativação</span></a>
+                      </div>
+                      <!--Fim HeroApp-->
+
+                      <!--Inicio Skeelo-->
+                      <span id="accordion-header-skeelo" class="accordion-btn-smenu btn" data-toggle="collapse" data-target="#id-skeelo" aria-expanded="true" aria-controls="id-skeelo">
+                        <div class="icon-container">
+                          <div class="icon icon-img-skeelo"></div>
+                          <span class="icon-name"> Skeelo</span>
+                        </div>
+                      </span>
+
+                      <div id="id-skeelo" class="collapse" aria-labelledby="accordion-header-skeelo" data-parent="#accordion-info-smenu">
+                        <a href="#" id="skeeloweb" class="accordion-smenu-text" target="_blank" ><i class=" icon bi bi-globe"></i><span class="icon-name"> App Web</span></a>
+                        <a href="#" id="skeelomanual" class="accordion-smenu-text" target="_blank" ><i class=" icon bi bi-book"></i><span class="icon-name"> Manual</span></a>
+                        <a href="#" id="skeeloativar" class="accordion-smenu-text" target="_blank" ><i class="icon bi bi-power"></i><span class="icon-name"> Ativação</span></a>
+                      </div>
+                      <!--Fim Brisa Skeelo-->
+
+                      <!--Inicio Bebanca-->
+                      <span id="accordion-header-bebanca" class="accordion-btn-smenu btn" data-toggle="collapse" data-target="#id-bebanca" aria-expanded="true" aria-controls="id-bebanca">
+                        <div class="icon-container">
+                          <div class="icon icon-img-bebanca"></div>
+                          <span class="icon-name">BeBanca</span>
+                        </div>
+                      </span>
+
+                      <div id="id-bebanca" class="collapse" aria-labelledby="accordion-header-bebanca" data-parent="#accordion-info-smenu">
+                        <a href="#" id="bebancaweb" class="accordion-smenu-text" target="_blank" ><i class=" icon bi bi-globe"></i><span class="icon-name"> App Web</span></a>
+                        <a href="#" id="bebancamanual" class="accordion-smenu-text" target="_blank" ><i class=" icon bi bi-book"></i><span class="icon-name"> Manual</span></a>
+                      </div>
+                      <!--Fim Bebanca-->
+
+                      <!--Inicio Ubook Select-->
+                      <span id="accordion-header-ubookselect" class="accordion-btn-smenu btn" data-toggle="collapse" data-target="#id-ubookselect" aria-expanded="true" aria-controls="id-ubookselect">
+                        <div class="icon-container">
+                          <div class="icon icon-img-ubookselect"></div>
+                          <span class="icon-name">Ubool Select</span>
+                        </div>
+                      </span>
+
+                      <div id="id-ubookselect" class="collapse" aria-labelledby="accordion-header-ubookselect" data-parent="#accordion-info-smenu">
+                        <a href="#" id="ubookselectweb" class="accordion-smenu-text" target="_blank" ><i class=" icon bi bi-globe"></i><span class="icon-name"> App Web</span></a>
+                        <a href="#" id="ubookselectmanual" class="accordion-smenu-text" target="_blank" ><i class=" icon bi bi-book"></i><span class="icon-name"> Manual</span></a>
+                      </div>
+                      <!--Fim Ubook Select-->
+
+                       <!--Inicio Goread-->
+                      <span id="accordion-header-goread" class="accordion-btn-smenu btn" data-toggle="collapse" data-target="#id-goread" aria-expanded="true" aria-controls="id-goread">
+                        <div class="icon-container">
+                          <div class="icon icon-img-goread"></div>
+                          <span class="icon-name">GoRead</span>
+                        </div>
+                      </span>
+
+                      <div id="id-goread" class="collapse" aria-labelledby="accordion-header-goread" data-parent="#accordion-info-smenu">
+                        <a href="#" id="goreadweb" class="accordion-smenu-text" target="_blank" ><i class=" icon bi bi-globe"></i><span class="icon-name"> App Web</span></a>
+                        <a href="#" id="goreadmanual" class="accordion-smenu-text" target="_blank" ><i class=" icon bi bi-book"></i><span class="icon-name"> Manual</span></a>
+                        <a href="#" id="goreadativar" class="accordion-smenu-text" target="_blank" > <i class="icon bi bi-power"></i><span class="icon-name"> Ativação</span></a>
+                      </div>
+                      <!--Fim Goread-->
+
+                      <!--Inicio Qualifica-->
+                      <span id="accordion-header-qualifica" class="accordion-btn-smenu btn" data-toggle="collapse" data-target="#id-qualifica" aria-expanded="true" aria-controls="id-qualifica">
+                        <div class="icon-container">
+                          <div class="icon icon-img-qualifica"></div>
+                          <span class="icon-name">Qualifica</span>
+                        </div>
+                      </span>
+
+                      <div id="id-qualifica" class="collapse" aria-labelledby="accordion-header-qualifica" data-parent="#accordion-info-smenu">
+                        <a href="#" id="qualificaweb" class="accordion-smenu-text" target="_blank" ><i class=" icon bi bi-globe"></i><span class="icon-name"> App Web</span></a>
+                        <a href="#" id="qualificamanual" class="accordion-smenu-text" target="_blank" ><i class=" icon bi bi-book"></i><span class="icon-name"> Manual</span></a>
+                        <a href="#" id="qualificaativar" class="accordion-smenu-text" target="_blank" ><i class="icon bi bi-power"></i><span class="icon-name"> Ativação</span></a>
+                      </div>
+                      <!--Fim qualifica-->
+
+                      <!--Inicio GloboPlay-->
+                      <span id="accordion-header-globoplay" class="accordion-btn-smenu btn" data-toggle="collapse" data-target="#id-globoplay" aria-expanded="true" aria-controls="id-globoplay">
+                        <div class="icon-container">
+                          <div class="icon icon-img-globoplay"></div>
+                          <span class="icon-name">GloboPlay</span>
+                        </div>
+                      </span>
+
+                      <div id="id-globoplay" class="collapse" aria-labelledby="accordion-header-globoplay" data-parent="#accordion-info-smenu">
+                        <a href="#" id="globoplayweb" class="accordion-smenu-text" target="_blank" > <span><i class=" icon bi bi-globe"></i><span class="icon-name"> App Web</span></a>
+                        <a href="#" id="globoplaymanual" class="accordion-smenu-text" target="_blank" ><i class=" icon bi bi-book"></i><span class="icon-name"> Manual</span></a>
+                        <a href="#" id="globoplayativar" class="accordion-smenu-text" target="_blank" ><i class="icon bi bi-power"></i><span class="icon-name"> Ativação</span></a>
+                        <a href="#" id="globoplaytvtexto" class="accordion-smenu-text" target="_blank" ><i class="icon bi bi-display"></i></i><span class="icon-name"> Ativação Smart TV</span></a>
+                        <a href="#" id="globoplaytvvideo" class="accordion-smenu-text" target="_blank" ><i class="icon bi bi-collection-play-fill"></i> <span class="icon-name"> Ativação Smart TV</span></a>
+                        <a href="#" id="globoplayemail" class="accordion-smenu-text" target="_blank" ><i class="icon bi bi-envelope"></i><pan class="icon-name"> Alterar E-mail</span></a>
+                        <a href="#" id="globoplaygeoip" class="accordion-smenu-text" target="_blank" ><i class="icon bi bi-pin-map"></i><span class="icon-name"> Geolocalização IP</span></a>
+                      </div>
+                      <!--Fim Globoplay-->
+
+                       <!--Inicio Netflix-->
+                       <span id="accordion-header-netflix" class="accordion-btn-smenu btn" data-toggle="collapse" data-target="#id-netflix" aria-expanded="true" aria-controls="id-netflix">
+                        <div class="icon-container">
+                          <div class="icon icon-img-netflix"></div>
+                          <span class="icon-name">Netflix</span>
+                        </div>
+                      </span>
+
+                      <div id="id-netflix" class="collapse" aria-labelledby="accordion-header-netflix" data-parent="#accordion-info-smenu">
+                        <a href="#" id="netflixweb" class="accordion-smenu-text" target="_blank" ><i class=" icon bi bi-globe"></i><span class="icon-name"> App Web</span></a>
+                        <a href="#" id="netflixmanual" class="accordion-smenu-text" target="_blank" ><i class=" icon bi bi-book"></i><span class="icon-name"> Manual</span></a>
+                        <a href="#" id="netflixativar" class="accordion-smenu-text" target="_blank" ><i class="icon bi bi-power"></i><span class="icon-name"> Ativação</span></a>
+                      </div>
+                      <!--Fim Netflix-->
+
+                      <!--Inicio Premiere-->
+                      <span id="accordion-header-premiere" class="accordion-btn-smenu btn" data-toggle="collapse" data-target="#id-premiere" aria-expanded="true" aria-controls="id-premiere">
+                        <div class="icon-container">
+                          <div class="icon icon-img-premiere"></div>
+                          <span class="icon-name">Premiere</span>
+                        </div>
+                      </span>
+
+                      <div id="id-premiere" class="collapse" aria-labelledby="accordion-header-premiere" data-parent="#accordion-info-smenu">
+                        <a href="#" id="premiereweb" class="accordion-smenu-text" target="_blank" ><i class=" icon bi bi-globe"></i><span class="icon-name"> App Web</span></a>
+                        <a href="#" id="premieremanual" class="accordion-smenu-text" target="_blank"><i class=" icon bi bi-book"></i><span class="icon-name"> Manual</span></a>
+                        <a href="#" id="premiereativar" class="accordion-smenu-text" target="_blank" ><i class="icon bi bi-power"></i><span class="icon-name"> Ativação</span></a>
+                      </div>
+                      <!--Fim Premiere-->
+
+                      <!--Inicio Telecine-->
+                      <span id="accordion-header-telecine" class="accordion-btn-smenu btn" data-toggle="collapse" data-target="#id-telecine" aria-expanded="true" aria-controls="id-telecine">
+                        <div class="icon-container">
+                          <div class="icon icon-img-telecine"></div>
+                          <span class="icon-name">Telecine</span>
+                        </div>
+                      </span>
+
+                      <div id="id-telecine" class="collapse" aria-labelledby="accordion-header-telecine" data-parent="#accordion-info-smenu">
+                        <a href="#" id="telecineweb" class="accordion-smenu-text" target="_blank" ><i class=" icon bi bi-globe"></i><span class="icon-name"> App Web</span></a>
+                        <a href="#" id="telecinemanual" class="accordion-smenu-text" target="_blank" ><i class=" icon bi bi-book"></i><span class="icon-name"> Manual</span></a>
+                        <a href="#" id="telecineativar" class="accordion-smenu-text" target="_blank" ><i class="icon bi bi-power"></i><span class="icon-name"> Ativação</span></a>
+                      </div>
+                      <!--Fim Telecine-->
+
+                       <!--Inicio SexyHot-->
+                       <span id="accordion-header-sexyhot" class="accordion-btn-smenu btn" data-toggle="collapse" data-target="#id-sexyhot" aria-expanded="true" aria-controls="id-sexyhot">
+                        <div class="icon-container">
+                          <div class="icon icon-img-sexyhot"></div>
+                          <span class="icon-name">SexyHot</span>
+                        </div>
+                      </span>
+
+                      <div id="id-sexyhot" class="collapse" aria-labelledby="accordion-header-sexyhot" data-parent="#accordion-info-smenu">
+                        <a href="#" id="sexyhotweb" class="accordion-smenu-text" target="_blank" ><i class=" icon bi bi-globe"></i><span class="icon-name"> App Web</span></a>
+                        <a href="#" id="sexyhotmanual" class="accordion-smenu-text" target="_blank" ><i class=" icon bi bi-book"></i><span class="icon-name"> Manual</span></a>
+                        <a href="#" id="sexyhotativar" class="accordion-smenu-text" target="_blank" ><i class="icon bi bi-power"></i><span class="icon-name"> Ativação</span></a>
+                      </div>
+                      <!--Fim SexyHot-->
+
+                       <!--Inicio Docway-->
+                       <span id="accordion-header-docway" class="accordion-btn-smenu btn" data-toggle="collapse" data-target="#id-docway" aria-expanded="true" aria-controls="id-docway">
+                        <div class="icon-container">
+                          <div class="icon icon-img-docway"></div>
+                          <span class="icon-name">Docway</span>
+                        </div>
+                      </span>
+
+                      <div id="id-docway" class="collapse" aria-labelledby="accordion-header-docway" data-parent="#accordion-info-smenu">
+                        <a href="#" id="docwayweb" class="accordion-smenu-text" target="_blank" ><i class=" icon bi bi-globe"></i><span class="icon-name"> App Web</span></a>
+                        <a href="#" id="docwaymanual" class="accordion-smenu-text" target="_blank" ><i class=" icon bi bi-book"></i><span class="icon-name"> Manual</span></a>
+                        <a href="#" id="docwayativar" class="accordion-smenu-text" target="_blank" ><i class="icon bi bi-power"></i><span class="icon-name"> Ativação</span></a>
+                      </div>
+                      <!--Fim Docway-->
+
+                       <!--Inicio Familia Protegida-->
+                       <span id="accordion-header-familiaprotegida" class="accordion-btn-smenu btn" data-toggle="collapse" data-target="#id-familiaprotegida" aria-expanded="true" aria-controls="id-familiaprotegida">
+                        <div class="icon-container">
+                          <div class="icon icon-img-familiaprotegida"></div>
+                          <span class="icon-name">Familia Protegida</span>
+                        </div>
+                      </span>
+
+                      <div id="id-familiaprotegida" class="collapse" aria-labelledby="accordion-header-familiaprotegida" data-parent="#accordion-info-smenu">
+                        <a href="#" id="familiaprotegidamanual" class="accordion-smenu-text" target="_blank" ><i class=" icon bi bi-book"></i><span class="icon-name"> Manual</span></a>
+                        <a href="#" id="familiaprotegidaativar" class="accordion-smenu-text" target="_blank" ><i class="icon bi bi-power"></i><span class="icon-name"> Ativação</span></a>
+                      </div>
+                      <!--Fim Familia Protegida-->
+
+                      <!--Fibra óptica-->
+                      <span id="accordion-header-fibraoptica" class="accordion-btn-smenu btn" data-toggle="collapse" data-target="#id-fibraoptica" aria-expanded="true" aria-controls="id-fibraoptica">
+                        <div class="icon-container">
+                          <div class="icon icon-img-fibraoptica"></div>
+                          <span class="icon-name">Fibra Óptica</span>
+                        </div>
+                      </span>
+
+                      <div id="id-fibraoptica" class="collapse" aria-labelledby="accordion-header-fibraoptica" data-parent="#accordion-info-smenu">
+                        <a href="#" id="fibraguia" class="accordion-smenu-text" target="_blank" ><i class="icon bi bi-person"></i><span class="icon-name">Guia do Cliente</span></a>
+                        <a href="#" id="fibraplano" class="accordion-smenu-text" target="_blank" ><i class="icon bi bi-cart"></i><span class="icon-name">Plano</span></a>
+                        <a href="#" id="fibramanual" class="accordion-smenu-text" target="_blank" ><i class=" icon bi bi-book"></i><span class="icon-name"> Manual</span></a>
+                      </div>
+                      <!--Fim Fibra Óptica-->
+
+                       <!--Inicio TV BOX-->
+                       <span id="accordion-header-tvbox" class="accordion-btn-smenu btn" data-toggle="collapse" data-target="#id-tvbox" aria-expanded="true" aria-controls="id-tvbox">
+                        <div class="icon-container">
+                          <div class="icon icon-img-tvbox"></div>
+                          <span class="icon-name">TV</span>
+                        </div>
+                      </span>
+
+                      <div id="id-tvbox" class="collapse" aria-labelledby="accordion-header-tvbox" data-parent="#accordion-info-smenu">
+                        <a href="#" id="tvplano" class="accordion-smenu-text" target="_blank" ><i class="icon bi bi-cart"></i><span class="icon-name">Plano</span></a>
+                        <a href="#" id="tvcanal" class="accordion-smenu-text" target="_blank" > <i class=" icon bi bi-display"></i><span class="icon-name">Canais</span></a>
+                        <a href="#" id="tvsuporte" class="accordion-smenu-text" target="_blank" > <i class="icon bi bi-headset"></i><span> Suporte</span></a>
+                      </div>
+                      <!--Fim TV BOX -->
+
+                       <!--Inicio Fixo-->
+                       <span id="accordion-header-fixo" class="accordion-btn-smenu btn" data-toggle="collapse" data-target="#id-fixo" aria-expanded="true" aria-controls="id-fixo">
+                        <div class="icon-container">
+                          <div class="icon icon-img-fixo"></div>
+                          <span class="icon-name">Fixo</span>
+                        </div>
+                      </span>
+
+                      <div id="id-fixo" class="collapse" aria-labelledby="accordion-header-fixo" data-parent="#accordion-info-smenu">
+                        <a href="#" id="fixoguia" class="accordion-smenu-text" target="_blank" ><i class="icon bi bi-person"></i><span class="icon-name">Guia do Cliente</span></span></a>
+                        <a href="#" id="fixomanual" class="accordion-smenu-text" target="_blank" ><i class=" icon bi bi-book"></i><span class="icon-name"> Manual</span></a>
+                        <a href="#" id="fixosuporte" class="accordion-smenu-text" target="_blank" ><i class="icon bi bi-headset"></i><span class="icon-name"> Suporte</span></a> 
+                        <a href="#" id="fixoretencao" class="accordion-smenu-text" target="_blank" ><i class="icon bi bi-headset"></i><span class="icon-name"> Retenção</span></a>
+                        <a href="#" id="fixoportabilidade" class="accordion-smenu-text" target="_blank" ><i class=" icon bi bi-telephone"></i><span class="icon-name">Portabilidade</span></a>
+                        <a href="#" id="fixoespecificacao" class="accordion-smenu-text" target="_blank" ><i class=" icon bi bi-telephone"></i><span class="icon-name">Especificação</span></a> 
+                        <a href="#" id="fixoconsulta" class="accordion-smenu-text" target="_blank" > <span><i class=" icon bi bi-telephone"></i><span class="icon-name">Consulta Telefone</span></a>                     
+                      </div>
+                      <!--Fim Fixo -->
+
+                      <!--Inicio Conecta+-->
+                      <span id="accordion-header-conecta" class="accordion-btn-smenu btn" data-toggle="collapse" data-target="#id-conecta" aria-expanded="true" aria-controls="id-conecta">
+                        <div class="icon-container">
+                          <div class="icon icon-img-conecta"></div>
+                          <span class="icon-name">Conecta+</span>
+                        </div>
+                      </span>
+
+                      <div id="id-conecta" class="collapse" aria-labelledby="accordion-header-conecta" data-parent="#accordion-info-smenu">
+                        <a href="#" id="conectavenda" class="accordion-smenu-text" target="_blank" ><i class="icon bi bi-cart"></i><span class="icon-name">Plano</span></a>
+                        <a href="#" id="conectamanual" class="accordion-smenu-text" target="_blank" ><i class=" icon bi bi-book"></i><span class="icon-name"> Manual</span></a>
+                        <a href="#" id="conectaretencao" class="accordion-smenu-text" target="_blank" ><i class="icon bi bi-headset"></i><span class="icon-name"> Retenção</span></a>
+                        <a href="#" id="conectainstalacao" class="accordion-smenu-text" target="_blank" ><i class="icon bi bi-tools"></i><span class="icon-name">Instalação</span></a>
+                      </div>
+                      <!--Fim Conecta+-->
+
+                      <!--InicioBrisa Móvel-->
+                      <span id="accordion-header-brisamovel" class="accordion-btn-smenu btn" data-toggle="collapse" data-target="#id-brisamovel" aria-expanded="true" aria-controls="id-brisamovel">
+                        <div class="icon-container">
+                          <div class="icon icon-img-brisamovel"></div>
+                          <span class="icon-name">Brisa Móvel</span>
+                        </div>
+                      </span>
+
+                      <div id="id-brisamovel" class="collapse" aria-labelledby="accordion-header-brisamovel" data-parent="#accordion-info-smenu">
+                        <a href="#" id="brisamovelmanual" class="accordion-smenu-text" target="_blank" ><i class=" icon bi bi-book"></i><span class="icon-name"> Manual</span></a>
+                        <a href="#" id="brisamovelplano" class="accordion-smenu-text" target="_blank" ><i class="icon bi bi-cart"></i><span class="icon-name">Plano</span></a>
+                        <a href="#" id="brisamovelfaq" class="accordion-smenu-text" target="_blank" > <i class="icon bi bi-chat-dots"></i><span class="icon-name">FAQ</span></a>
+                      </div>
+                      <!--Fim Brisa Móvel -->
+
+                      <!--Inicio Mais-->
+                      <span id="accordion-header-mais" class="accordion-btn-smenu btn" data-toggle="collapse" data-target="#id-mais" aria-expanded="true" aria-controls="id-mais">
+                        <div class="icon-container">
+                          <div class="icon icon-img-mais"></div>
+                          <span class="icon-name">Mais +</span>
+                        </div>
+                      </span>
+
+                      <div id="id-mais" class="collapse" aria-labelledby="accordion-header-mais" data-parent="#accordion-info-smenu">
+                        <a href="#" id="material1" class="accordion-smenu-text" target="_blank" > <i class=" icon bi bi-book"></i> <span class="icon-name"> Material 1.0</span></a>
+                        <a href="#" id="material2" class="accordion-smenu-text" target="_blank" > <i class=" icon bi bi-book"></i> <span class="icon-name">Material 2.0</span></a>
+                      </div>
+                      <!--Fim Mais-->
+                    </div>
+                  </li>  
+                  <!--fim do app-->
+                </ul>
+                <!--Fim do accordion-->
+              </div>
+               <!--fim da segunda caixa-->
+              <div class="col-lg-1"></div>
+              <!--Inicio da segunda caixa-->
+              <div class="body-dimension col-lg-3 smooth-transition">
+
+                <ul class="list-group accordion-menu" id="accordion-suport">
+                  <!-- Inicio do dev -->
+                  <li class="list-group-item accordion-item" id="accordion-dev-smenu">
+                    <span id="accordion-header-dev" class="accordion-btn btn" data-toggle="collapse" data-target="#id-dev" aria-expanded="true" aria-controls="id-dev">
+                      <i class="icon bi bi-terminal"></i>
+                      <span class="icon-name">Dev</span>
+                    </span>
+                
+                    <div id="id-dev" class="collapse background-smenu" aria-labelledby="accordion-header-dev" data-parent="#accordion-suport">
+                      <!-- Inicio Ticket -->
+                      <span id="accordion-header-devticket" class=" accordion-btn-smenu btn" data-toggle="collapse" data-target="#id-devticket" aria-expanded="true" aria-controls="id-devticket">
+                        <div class="icon-container">
+                          <div class="icon icon-img-ticket"></div>
+                          <span class="icon-name">Ticket</span>
+                        </div>
+                      </span>
+                
+                      <div id="id-devticket" class="collapse" aria-labelledby="accordion-header-devticket" data-parent="#accordion-dev-smenu">
+                        <a href="#" id="devabrirticket" class="accordion-btn-smenu accordion-smenu-text" target="_blank" > <i class="icon bi bi-pen"></i><span class="icon-name">Abrir</span></a>
+                        <a href="#" id="devvisualizarticket" class="accordion-btn-smenu accordion-smenu-text" target="_blank" ><i class="bi bi-journal-code"></i><span class="icon-name">Visualizar</span></a>
+                      </div>
+                      <!-- Fim do Ticket -->
+
+                      <!--Ininicio Manual Dev-->
+                      <span id="accordion-header-devmanual" class=" accordion-btn-smenu btn" data-toggle="collapse" data-target="#id-devmanual" aria-expanded="true" aria-controls="id-devmanual">
+                        <div class="icon-container">
+                          <div class="icon icon-img-manual"></div>
+                          <span class="icon-name">Manual</span>
+                        </div>
+                      </span>
+
+                      <div id="id-devmanual" class="collapse" aria-labelledby="accordion-header-devmanual" data-parent="#accordion-dev-smenu">
+                        <a href="#" id="dev-manual-tplink" class="accordion-btn-smenu accordion-smenu-text" target="_blank" ><i class=" icon bi bi-book"></i><span class="icon-name">TP-LINK</span></a>
+                      </div>
+                      <!--fim do Manual Dev-->
+
+                      <!--Inicio Emulador Dev-->
+                      <span id="accordion-header-devemulador" class="accordion-btn-smenu btn" data-toggle="collapse" data-target="#id-devemulador" aria-expanded="true" aria-controls="id-devemulador">
+                        <div class="icon-container">
+                          <div class="icon icon-img-roteador"></div>
+                          <span class="icon-name">Emulador</span>
+                        </div>
+                      </span>
+
+                      <div id="id-devemulador" class="collapse" aria-labelledby="accordion-header-devemulador" data-parent="#accordion-dev-smenu">
+                        <a href="#" id="emulador-tplink" class="accordion-btn-smenu accordion-smenu-text" target="_blank" > <i class="icon bi bi-wifi"></i><span class="icon-name">TP-Llink</span></a>
+                        <a href="#" id="emulador-mercusys" class="accordion-btn-smenu accordion-smenu-text" target="_blank" > <i class="icon bi bi-wifi"></i><span class="icon-name">Mercusys</span></a>
+                        <a href="#" id="emulador-tenda" class="accordion-btn-smenu accordion-smenu-text" target="_blank" > <i class="icon bi bi-wifi"></i><span class="icon-name">Tenda</span></a>
+                      </div>
+                      <!--Fim Emulador Dev-->
+                    </div>
+                  </li>
+                  <!-- Fim do dev -->
+
+                  <!--Inicio NOC-->
+                  <li class="list-group-item accordion-item" id="accordion-noc-smenu">
+                    <span id="accordion-header-noc" class="accordion-btn btn" data-toggle="collapse" data-target="#id-noc" aria-expanded="true" aria-controls="id-noc">
+                      <i class="icon bi bi-hdd-stack"></i>
+                      <span class="icon-name">Noc</span>
+                    </span>
+
+                    <div id="id-noc" class="collapse background-smenu" aria-labelledby="accordion-header-noc" data-parent="#accordion-suport">
+
+                    </div>
+                  </li>
+                  <!--FIM NOC-->
+
+                  <!--Inicio IMOC-->
+                  <li class="list-group-item accordion-item" id="accordion-imoc-smenu">
+                    <span id="accordion-header-imoc" class="accordion-btn btn" data-toggle="collapse" data-target="#id-imoc" aria-expanded="true" aria-controls="id-imoc">
+                      <i class="icon bi bi-gear"></i>
+                      <span class="icon-name">Imoc</span>
+                    </span>
+
+                    <div id="id-imoc" class="collapse background-smenu" aria-labelledby="accordion-header-imoc" data-parent="#accordion-suport">
+                      <!-- Inicio Ticket Imoc-->
+                      <span id="accordion-header-imocticket" class=" accordion-btn-smenu btn" data-toggle="collapse" data-target="#id-imocticket" aria-expanded="true" aria-controls="id-imocticket">
+                        <div class="icon-container">
+                          <div class="icon icon-img-ticket"></div>
+                          <span class="icon-name">Ticket</span>
+                        </div>
+                      </span>
+                
+                      <div id="id-imocticket" class="collapse" aria-labelledby="accordion-header-imocticket" data-parent="#accordion-imoc-smenu">
+                        <a href="#" id="imocabrirticket" class="accordion-btn-smenu accordion-smenu-text" target="_blank" > <i class="icon bi bi-pen"></i><span class="icon-name">Abrir</span></a>
+                        <a href="#" id="imocvisualizarticket" class="accordion-btn-smenu accordion-smenu-text" target="_blank" ><i class="bi bi-journal-code"></i><span class="icon-name">Visualizar</span></a>
+                      </div>
+                      <!-- Fim do Ticket imoc -->
+
+                       <!-- Inicio cobrar Imoc-->
+                       <span id="accordion-header-imoccobrar" class=" accordion-btn-smenu btn" data-toggle="collapse" data-target="#id-imoccobrar" aria-expanded="true" aria-controls="id-imoccobrar">
+                        <div class="icon-container">
+                          <div class="icon icon-img-ticket"></div>
+                          <span class="icon-name">Cobrar</span>
+                        </div>
+                      </span>
+                
+                      <div id="id-imoccobrar" class="collapse" aria-labelledby="accordion-header-imoccobrar" data-parent="#accordion-imoc-smenu">
+                        <a href="#" id="imocabrircobrar" class="accordion-btn-smenu accordion-smenu-text" target="_blank" > <i class="icon bi bi-pen"></i><span class="icon-name">Abrir</span></a>
+                        <a href="#" id="imocvisualizarcobrar" class="accordion-btn-smenu accordion-smenu-text" target="_blank" ><i class="bi bi-journal-code"></i><span class="icon-name">Visualizar</span></a>
+                      </div>
+                      <!-- Fim do cobrar imoc -->
+
+                       <!-- Inicio drop Imoc-->
+                       <span id="accordion-header-imocdrop" class=" accordion-btn-smenu btn" data-toggle="collapse" data-target="#id-imocdrop" aria-expanded="true" aria-controls="id-imocdrop">
+                        <div class="icon-container">
+                          <div class="icon icon-img-drop"></div>
+                          <span class="icon-name">Drop</span>
+                        </div>
+                      </span>
+                
+                      <div id="id-imocdrop" class="collapse" aria-labelledby="accordion-header-imocdrop" data-parent="#accordion-imoc-smenu">
+                        <a href="#" id="imocabrirdrop" class="accordion-btn-smenu accordion-smenu-text" target="_blank" > <i class="icon bi bi-pen"></i><span class="icon-name">Abrir</span></a>
+                        <a href="#" id="imocvisualizardrop" class="accordion-btn-smenu accordion-smenu-text" target="_blank" ><i class="bi bi-journal-code"></i><span class="icon-name">Visualizar</span></a>
+                      </div>
+                      <!-- Fim do drop imoc -->
+
+                      <!--Ininicio Manual imoc-->
+                      <span id="accordion-header-imocmanual" class=" accordion-btn-smenu btn" data-toggle="collapse" data-target="#id-imocmanual" aria-expanded="true" aria-controls="id-imocmanual">
+                        <div class="icon-container">
+                          <div class="icon icon-img-manual"></div>
+                          <span class="icon-name">Manual</span>
+                        </div>
+                      </span>
+
+                      <div id="id-imocmanual" class="collapse" aria-labelledby="accordion-header-imocmanual" data-parent="#accordion-imoc-smenu">
+                        <a href="#" id="imoc-manual-sinal" class="accordion-btn-smenu accordion-smenu-text" target="_blank" ><i class=" icon bi bi-book"></i><span class="icon-name">Sinal Irregular</span></a>
+                      </div>
+                      <!--fim do Manual imoc-->
+                    </div>
+                  </li>
+                  <!--FIM IMOC-->
+
+                  <!--Inicio Externo-->
+                  <li class="list-group-item accordion-item" id="accordion-externo-smenu">
+                    <span id="accordion-header-externo" class="accordion-btn btn" data-toggle="collapse" data-target="#id-externo" aria-expanded="true" aria-controls="id-externo">
+                      <i class="icon bi bi-house-door"></i>
+                      <span class="icon-name">IAT</span>
+                    </span>
+
+                    <div id="id-externo" class="collapse background-smenu accordion-smenu" aria-labelledby="accordion-header-externo" data-parent="#accordion-suport">
+                     <a href="#" id="usuario-ponto" target="_blank" >
+                          <i class=" icon bi bi-person-circle"></i>
+                          <span class="icon-name">Gerência</span>
+                    </a>
+                    </div>
+                  </li>
+                  <!--Fim Externo-->
+                </ul>
+                <!-- Fim do accordion -->
+              </div>
+               <!--fim da terceira caixa-->
+            </div>
+            <div class="body-abstract col-lg-3"></div>
+          </main>
+        </div>
+      </div>
+
+          <!-- Modal -->
+        <div id="myModal" class="modal">
+          <div class="modal-content">
+            <span class="close"><i class="bi bi-backspace-fill"></i></span>
+            <p id="modal-text"></p>
+          </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+       <div class="row m-0">
+        <div class="col-lg-2"></div>
+        <div class="col-lg-10">
+          &copy; 2023 Brisanet Telecomunicações SA. Todos os direitos reservados.
+        </div>
+       </div>
+    </footer>
+  
+
+  <!-- Adicione os scripts do Bootstrap e do JavaScript aqui -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="../static/js/url.js"></script>
+  <script src="../static/js/home.js"></script>
+  <script src="../static/js/sidebar.js"></script>
+  <script src="../static/js/modal.js"></script>
+  <script src="../static/js/validation.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

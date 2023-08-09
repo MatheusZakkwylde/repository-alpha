@@ -1,0 +1,16 @@
+body{
+  display: flex;
+  min-height: 100vh; /*Minuto de altura (Body 100% da tela)*/
+  flex-direction: column;
+}
+
+#content-body{
+    flex: 1;
+    margin-top: 6%;
+}
+
+/**Fonte Universal*/
+* {
+    font-family: "Playfair Display", serif;
+    text-decoration: none !important;
+}

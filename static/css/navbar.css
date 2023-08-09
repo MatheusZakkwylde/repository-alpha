@@ -1,0 +1,65 @@
+
+nav .navbar-toggler{
+    display: block !important;
+    padding:  6px;
+    margin-right: 20px;
+    outline: none;
+    transition: transform 0.2s ease;
+}
+
+nav .navbar-toggler:hover{
+    opacity: 0.9;
+    transform: translateY(-5px);
+}
+
+
+nav .btn-outline-light{
+    border-radius: 0 15px 0 15px;
+}
+
+nav .btn-outline-light:hover{
+    transform: translateY(-5px);
+}
+
+nav .form-inline{
+    margin-right: 15px;
+}
+
+nav .single-input{
+    position: relative;
+    margin-right: 5px;
+}
+
+nav .single-input label{
+    position: absolute;
+    left: 5px;
+    bottom: 5px;
+    transform: all 0.2s;
+    color: #ffffff;
+}
+
+nav .form-control{
+    border: none;
+    border-bottom: solid 2px #ccc;
+    border-radius: 0;
+    outline: 0;
+    box-shadow: none;
+    transition: border-color 0.3s;
+    background-color: transparent !important;
+    color: #ffffff;
+}
+
+nav .form-control:focus{
+    border: none;
+    box-shadow: 0 1px 0 0 rgb(218, 206, 206);
+    border-bottom: 1px solid rgb(218, 206, 206);
+    transform: translateY(-5px);
+    color: #ffffff
+}
+
+nav form .single-input .input:focus ~ label,
+nav form .single-input .input:valid ~ label{
+    transform: translatey(-20px);
+}
+
+

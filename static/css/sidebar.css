@@ -1,0 +1,75 @@
+.sidebar {
+    position: fixed;
+    top: 87px; /* Ajuste a altura conforme necessário */
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 0;
+    padding-right: 0;
+    background-color: #343a40;
+    color: #fff;
+    overflow-y: auto;
+    transition: all 0.5s ease;
+ }
+
+.sidebar.hide {
+    left: -250px; /* Oculta o menu */
+}
+
+.sidebar .sidebar-body{
+    padding-left: 5px;
+}
+
+.sidebar-body .nav .nav-item{
+    margin-right: 10px;
+}
+
+.sidebar-body .nav .dashboard-sidebar .active{
+    background-color: rgba(0, 0, 0, 0.6);
+    overflow-y: auto;
+    transition: all 0.5s ease;
+}
+
+.sidebar-body .nav .dashboard-sidebar .active:hover{
+    transform: translateY(-2px);
+}
+
+.sidebar .sidebar-body .nav .btn-sidebar{
+    background-color: transparent;
+    border-bottom: #fff solid 1px;
+    border-radius: 0;
+    overflow-y: auto;
+    transition: all 0.5s ease;
+}
+
+.sidebar .sidebar-body .nav .btn-sidebar:hover{
+    background-color: rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
+
+.sidebar .sidebar-body .nav .btn-sidebar .nav-link{
+     color: #ffffff;
+     margin-right: 10px;
+}
+
+.sidebar .sidebar-body .nav .btn-sidebar .nav-link:hover{
+    color: #ccc;
+}
+
+.sidebar-body .nav .nav-item i{
+    margin-right: 5px;
+}
+
+.sidebar .footer-sidebar a{
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 36%;
+    margin-left: 10px;
+    margin-right:20px;
+    right: 0;
+    left: 0;
+    border-top: #fff solid 1px;
+    border-bottom: #ffffff solid 1px;
+}

@@ -1,0 +1,120 @@
+.list-group-item{
+    border: none;
+}
+.body-accordion{
+    margin-top: 20px;
+}
+
+.accordion-menu{
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.accordion-item{
+    border: none !important;
+    padding: 0;
+    overflow: hidden;
+}
+
+.accordion-btn{
+    display: block;
+    background-color: #343a40;
+    color: white;
+    position: relative;
+    padding: 12px;
+    padding-left: 20px;
+    outline: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.9);
+    border-radius: 0;
+    text-align: left;
+}
+
+.accordion-btn:hover{
+    color: white;
+    background-color: rgba(0.2, 0.2275,0.25, 0.8);
+}
+
+.accordion-btn::before{
+    content: "";
+    position: absolute;
+    height: 14px;
+    width: 14px;
+    background: #343a40;
+    left: 20px;
+    bottom: -7px;
+    transform: rotate(45deg);
+}
+
+.accordion-smenu, #id-app,#id-dev,#id-moc{
+    position: relative;
+    background-color: rgba(0, 0, 0, 0);
+    overflow: hidden;
+}
+
+.accordion-smenu::before,#id-app::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.accordion-smenu a,
+#id-app .accordion-btn-smenu,
+#id-dev .accordion-btn-smenu,
+#id-imoc .accordion-btn-smenu{
+    display: block;
+    padding: 16px 26px;
+    color: black;
+    margin: 4px 0;
+    position: relative;
+    outline: none;
+    transition: transform 0.2s ease;
+}
+
+.accordion-smenu a:hover,
+#id-app .accordion-btn-smenu:hover,
+#id-dev .accordion-btn-smenu:hover,
+#id-imoc .accordion-btn-smenu:hover{
+    transform: translateY(-5px);
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.accordion-smenu a::before,
+#id-app .accordion-btn-smenu::before ,
+#id-dev .accordion-btn-smenu::before,
+#id-imoc .accordion-btn-smenu::before {
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 100%;
+    background:#343a40;
+    left: 0;
+    top: 0;
+    transform: 0.3s;
+    opacity: 0;
+}
+
+.accordion-smenu a:hover::before,
+#id-app .accordion-btn-smenu:hover::before,
+#id-dev .accordion-btn-smenu:hover::before,
+#id-imoc .accordion-btn-smenu:hover::before{
+  opacity: 1;
+}
+
+.accordion-smenu i{
+    font-size: 22px;
+}
+
+.background-smenu{
+    background-color: rgba(0, 0, 0,0.1) !important;
+}
+
+#id-app .accordion-smenu-text ,
+#id-dev .accordion-smenu-text ,
+#id-imoc .accordion-smenu-text{
+    padding-left: 29px !important
+}
+

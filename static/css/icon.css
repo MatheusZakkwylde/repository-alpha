@@ -1,0 +1,191 @@
+.icon-container {
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    width: 25px;
+    height: 25px;
+    background-size: cover;
+    border-radius: 50px;
+    font-size: 19px;
+}
+
+.icon-name{
+    margin-left: 10px;
+    margin-top: 0px;
+}
+
+.icon-img-brisa{
+    background-image: url('../img/brisacliente-icon.webp');
+}
+
+.icon-img-brisaplay{
+    background-image: url('../img/brisaplay-icon.webp');
+}
+
+.icon-img-brisamusic{
+    background-image: url('../img/brisamusic-icon.webp');
+}
+
+.icon-img-heroapp{
+    background-image: url('../img/heroapp-icon.webp');
+}
+
+.icon-img-skeelo{
+    background-image: url('../img/skeelo-icon.webp');
+}
+
+.icon-img-bebanca{
+    background-image: url('../img/bebanca-icon.webp');
+}
+
+.icon-img-ubookselect{
+    background-image: url('../img/ubookselect-icon.webp');
+}
+
+.icon-img-qualifica{
+    background-image: url('../img/qualifica-icon.webp');
+}
+
+.icon-img-globoplay{
+    background-image: url('../img/globoplay-icon.webp');
+}
+
+.icon-img-netflix{
+    background-image: url('../img/Netflix-icon.webp');
+}
+
+.icon-img-premiere{
+    background-image: url('../img/premiere-icon.webp');
+}
+
+.icon-img-telecine{
+    background-image: url('../img/telecine-icon.webp');
+}
+
+.icon-img-sexyhot{
+    background-image: url('../img/sexyhot-icon.webp');
+}
+
+.icon-img-goread{
+    background-image: url('../img/goread-icon-.webp');
+}
+
+.icon-img-docway{
+    background-image: url('../img/Docway.webp');
+}
+
+.icon-img-familiaprotegida{
+    background-image: url('../img/familiaprotegida-icon.webp');
+}
+
+.icon-img-fibraoptica{
+    background-image: url('../img/fibra-optica-icon.webp');
+}
+
+.icon-img-conecta{
+    background-image: url('../img/conecta-icon.webp');
+}
+
+.icon-img-brisamovel{
+    background-image: url('../img/brisa-movel-icon.webp');
+}
+.icon-img-tvbox{
+    background-image: url('../img/tv-box-icon.webp');
+}
+
+.icon-img-fixo{
+    background-image: url('../img/Fixo-icon.webp');
+}
+
+.icon-img-mais{
+    background-image: url('../img/mais-icon.webp');
+}
+
+/*Icone sistemas*/
+.icon-img-siga{
+    background-image: url('../img/siga-icon.webp');
+}
+
+.icon-img-yoda{
+    background-image: url('../img/brisa-sistema-icon.webp');
+}
+
+.icon-img-revan{
+    background-image: url('../img/brisa-sistema-icon.webp');
+}
+
+.icon-img-setor{
+    background-image: url('../img/setores-icon.webp');
+}
+
+.icon-img-painel{
+    background-image: url('../img/painel-icon.webp');
+}
+
+.icon-img-receitafederal{
+    background-image: url('../img/receita-federal-icon.webp');
+}
+
+.icon-img-matrix{
+    background-image: url('../img/matrix-icon.webp');
+}
+
+.icon-img-raumil{
+    background-image: url('../img/raumil-icon.webp');
+}
+
+.icon-img-saski{
+    background-image: url('../img/brisacliente-icon.webp');
+}
+
+.icon-img-cact{
+    background-image: url('../img/cact-icon.webp');
+}
+
+.icon-img-estoque{
+    background-image: url('../img/brisa-sistema-icon.webp');
+}
+
+.icon-img-tiflux{
+    background-image: url('../img/tiflux-icon.webp');
+}
+
+.icon-img-universo{
+    background-image: url('../img/universo-icon.webp');
+}
+
+.icon-img-brisaead{
+    background-image: url('../img/brisacliente-icon.webp');
+}
+
+.icon-img-suporteinterno{
+    background-image: url('../img/brisa-sistema-icon.webp');
+}
+
+.icon-img-totvs{
+    background-image: url('../img/tot-vs-icon.webp');
+}
+
+.icon-img-downdedector{
+    background-image: url('../img/downdedector-con.webp');
+}
+
+/*botões*/
+
+.icon-img-ticket{
+    background-image: url('../img/ticket-icon.webp');
+}
+
+.icon-img-manual{
+    background-image: url('../img/manual-icon.webp');
+}
+
+.icon-img-roteador{
+    background-image: url('../img/roteador-icon.webp');
+}
+
+.icon-img-drop{
+    background-image: url('../img/drop-icon.webp');
+}
