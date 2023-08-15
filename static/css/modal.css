@@ -26,8 +26,18 @@
     margin-top: 10px;
     margin-left: 10px;
     padding-top: 20px;
-    color: black;
+    color: rgba(0, 0, 0, 0.9);
     border-top: #888 solid 1px;
+    padding: 10px;
+  }
+
+  .modal .black-text {
+    color: black;
+  } 
+
+  .modal .gray-text {
+    color: rgba(0, 0, 0, 0.7);
+    margin-left: 8px;
   }
 
   /* Botão de fechar */

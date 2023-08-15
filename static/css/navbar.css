@@ -28,6 +28,7 @@ nav .form-inline{
 nav .single-input{
     position: relative;
     margin-right: 5px;
+    margin-left: 15px;
 }
 
 nav .single-input label{
@@ -47,6 +48,7 @@ nav .form-control{
     transition: border-color 0.3s;
     background-color: transparent !important;
     color: #ffffff;
+    width: 100px !important;
 }
 
 nav .form-control:focus{

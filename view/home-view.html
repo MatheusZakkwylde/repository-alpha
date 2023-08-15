@@ -38,15 +38,25 @@
       </a>
 
       <div class="collapse navbar-collapse justify-content-end">
-        <!-- TEXTAR PORTAS DE SERVIÇO -->
+          <!-- TEXTAR PORTAS DE SERVIÇO -->
         <form class="form-inline">
 
           <div class="single-input" data-toggle="tooltip" title="Adicione Portas separadas por virgula simples.">
             <input type="text" name="port" id="port-box" class="input form-control" autocomplete="off" required>
-            <label for="port-box"> NOC Portas</label>
+            <label for="port-box"> Noc Porta</label>
           </div>
 
           <button class="btn btn-outline-light" type="button" onclick="ports()"><i class="bi bi-search"></i></button>
+        </form>
+        <!-- TEXTAR PORTAS DE SERVIÇO -->
+        <form class="form-inline">
+
+          <div class="single-input" data-toggle="tooltip" title="Adicione Portas separadas por virgula simples.">
+            <input type="text" name="plano" id="plano-box" class="input form-control" autocomplete="off" required>
+            <label for="plano-box"> Plano</label>
+          </div>
+
+          <button id="btn-clik-p"  class="btn btn-outline-light" type="button"><i class="bi bi-search"></i></button>
         </form>
       </div>
     </nav>
@@ -799,6 +809,16 @@
                      <a href="#" id="iat-gerencia" target="_blank" >
                           <i class=" icon bi bi-person-circle"></i>
                           <span class="icon-name">Gerência</span>
+                    </a>
+                    
+                    <a href="#" id="iat-instalacao" target="_blank" >
+                          <i class=" icon bi bi-person-circle"></i>
+                          <span class="icon-name">Instalação</span>
+                    </a>
+
+                    <a href="#" id="iat-reparo" target="_blank" >
+                          <i class=" icon bi bi-person-circle"></i>
+                          <span class="icon-name">Reparo</span>
                     </a>
                     </div>
                   </li>

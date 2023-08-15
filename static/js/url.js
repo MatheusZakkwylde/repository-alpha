@@ -38,8 +38,8 @@ document.getElementById('brisamanual').href="https://docs.google.com/presentatio
 //playplay
 
 document.getElementById('brisaplayweb').href="https://app.brisaplay.com.br/sign-in";
-document.getElementById('brisaplaymanual').href="https://drive.google.com/file/d/1AES8h-KyaUgKZqI2LqQWMjwFw9zFmd9H/view?usp=sharing";
-document.getElementById('brisaplayativar').href="https://drive.google.com/file/d/1r1UCT2XJKK3W2TgLqIrG0dybkV-pHcZE/view?usp=sharing";
+document.getElementById('brisaplaymanual').href="https://docs.google.com/presentation/d/1vXo5HgEKuFg0YuRdW3cZvqnRcKeBblfTV-cLKTjAbdU/edit?usp=sharing";
+document.getElementById('brisaplayativar').href="https://docs.google.com/presentation/d/1eBRMGA6KRTxAbEveAEjKAzNSagsZ893zFZnuzM-4x88/edit?usp=sharing";
 
 //brisamusic
 document.getElementById('brisamusicweb').href="https://app.brisamusic.com.br/index.html#/home";
@@ -167,3 +167,5 @@ document.getElementById('imocvisualizardrop').href="https://docs.google.com/spre
 document.getElementById('imoc-manual-sinal').href="https://docs.google.com/document/d/1lPloNmiYAhaphLmy_xsuHddr7yiuzWvbQ58V4DcdYhk/edit?usp=sharing";
 
 document.getElementById('iat-gerencia').href="https://docs.google.com/spreadsheets/d/108CeKc84WUCiP0Np6F8htHgwy7Y37jqlCq24LC0Y6no/edit?usp=sharing";
+document.getElementById('iat-reparo').href="https://docs.google.com/spreadsheets/d/1rrEh8qXBXzyjemZ2cR2wqOzdZsnAJY8wfUM_jVuEl6Q/edit?usp=sharing";
+document.getElementById('iat-instalacao').href="https://docs.google.com/spreadsheets/d/1jS5o5Rn8NZhR_0SCret_70bSQBkfRlifCxCijPRGluo/edit?usp=sharing";
