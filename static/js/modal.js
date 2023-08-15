@@ -3,19 +3,19 @@ document.getElementById('btn-clik-p').addEventListener('click', function() {
   const plano = new Mbps (document.getElementById('plano-box').value);
 
   let modalText = 
-  `<span class='black-text'>Plano: ${plano.getMbps} Mbps </span><br><br>
+  `<span class='black-text'>Plano: ${plano.getMbps} Mb/s (Megabits Por Segundo) Taxa de Transferência.  </span><br><br>
   <span class='black-text'> Dowload 100 % : </span>
-  <span class='gray-text'> ${plano.getMbps} Mbps</span><br>
-  <span class='black-text'> Garantia 80 % de ${plano.getMbps} Mbps :</span>
-  <span class='gray-text'> ${plano.getDownloadGuarantee} Mbps.</span><br>
-  <span class='black-text'>Taxa de Transferência De Dados Teórico. KB/s</span>
-  <span class='gray-text'> = ${plano.getDownloadKBps}  KBbs ou ${plano.getDownloadMbps} Mbps </span><br><br>
+  <span class='gray-text'> ${plano.getMbps} Mb/s (Megabits Por Segundo) Taxa de Transferência.</span><br>
+  <span class='black-text'> Garantia 80 % :</span>
+  <span class='gray-text'> ${plano.getDownloadGuarantee} Mb/s (Megabits Por Segundo) Taxa de Transferência.</span><br>
+  <span class='black-text'>Taxa de Transferência De Dados Teórico (Baixar).</span>
+  <span class='gray-text'> = ${plano.getDownloadKBps}  KB/s ou ${plano.getDownloadMbps} MB/s. </span><br><br>
   <span class='black-text'> Upload 50% : </span>
-  <span class='gray-text'>${plano.getUpload} Mbps.</span><br>
-  <span class='black-text'> Garantia 80% de ${plano.getUpload} Mbps : </span>
-  <span class='gray-text'>${plano.getUploadGuarantee} Mbps.</span><br>
-  <span class='black-text'>Taxa de Transferência De Dados Teórico. KB/s</span>
-  <span class='gray-text'> = ${plano.getUploadKBps}  KBbs ou ${plano.getUploadMbps} Mbps </span>`;
+  <span class='gray-text'>${plano.getUpload} Mb/s (Megabits Por Segundo) Taxa de Transferência.</span><br>
+  <span class='black-text'> Garantia 80%: </span>
+  <span class='gray-text'>${plano.getUploadGuarantee} Mb/s (Megabits Por Segundo) Taxa de Transferência.</span><br>
+  <span class='black-text'>Taxa de Transferência De Dados Teórico (Enviar).</span>
+  <span class='gray-text'> = ${plano.getUploadKBps}  KB/s ou ${plano.getUploadMbps} MB/s </span>`;
 
   document.getElementById('modal-text').innerHTML = modalText;
   document.getElementById('plano-box').value ="";
@@ -39,26 +39,26 @@ document.getElementById('btn-clik-p').addEventListener('click', function() {
 
 
 class Mbps {
-  #mbps;
+  #Mbps;
   #download;
   #upload;
   #downloadKBps;
   #uploadKBps;
-  #downloadMbps;
-  #uploadMbps
+  #downloadMBps;
+  #uploadMBps
 
-  constructor(mbps) {
-      this.#mbps = mbps; // Adicionando o plano atual.
-      this.#download = this.#mbps; //Obtendo a entrega de 100% de Download.
-      this.#upload = (50/100) * this.#mbps; // Obtendo a entrega de 50% do Upload.
-      this.#downloadKBps = (this.#download * 1024) / 8; // taxa de transferência de dados Downlioad.
-      this.#uploadKBps = (this.#upload * 1024) / 8; // taxa de transferência de dados Upload.
-      this.#downloadMbps = (this.#downloadKBps / 1024).toFixed(1); // transferẽncia em Mbps
-      this.#uploadMbps = (this.#uploadKBps / 1024).toFixed(1); // transferẽncia em Mbps
+  constructor(Mbps) {
+      this.#Mbps = Mbps; // Adicionando o plano atual.
+      this.#download = this.#Mbps; //Obtendo a entrega de 100% de Download.
+      this.#upload = (50/100) * this.#Mbps; // Obtendo a entrega de 50% do Upload.
+      this.#downloadMBps = (this.#download / 8).toFixed(1); // transferẽncia de dados em Mbps
+      this.#uploadMBps = (this.#upload /8).toFixed(1); // transferẽncia dados em Mbps
+      this.#downloadKBps = (this.#downloadMBps * 1024) / 8; // taxa de transferência de dados Downlioad KBps.
+      this.#uploadKBps = (this.#uploadMBps * 1024) / 8; // taxa de transferência de dados Upload KBps.
     }
 
   get getMbps (){
-      return this.#mbps;
+      return this.#Mbps;
   }
 
   get getDownloadGuarantee (){ 
@@ -82,11 +82,11 @@ class Mbps {
   }
 
   get getDownloadMbps (){
-    return this.#downloadMbps;
+    return this.#downloadMBps;
   }
 
   get getUploadMbps(){
-    return this.#uploadMbps;
+    return this.#uploadMBps;
   }
 }
  
