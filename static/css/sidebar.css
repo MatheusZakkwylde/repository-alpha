@@ -15,7 +15,7 @@
  }
 
 .sidebar.hide {
-    left: -250px; /* Oculta o menu */
+    left: -300px; /* Oculta o menu */
 }
 
 .sidebar .sidebar-body{

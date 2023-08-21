@@ -169,3 +169,25 @@ document.getElementById('imoc-manual-sinal').href="https://docs.google.com/docum
 document.getElementById('iat-gerencia').href="https://docs.google.com/spreadsheets/d/108CeKc84WUCiP0Np6F8htHgwy7Y37jqlCq24LC0Y6no/edit?usp=sharing";
 document.getElementById('iat-reparo').href="https://docs.google.com/spreadsheets/d/1rrEh8qXBXzyjemZ2cR2wqOzdZsnAJY8wfUM_jVuEl6Q/edit?usp=sharing";
 document.getElementById('iat-instalacao').href="https://docs.google.com/spreadsheets/d/1jS5o5Rn8NZhR_0SCret_70bSQBkfRlifCxCijPRGluo/edit?usp=sharing";
+
+document.getElementById('noc-manual').href="https://docs.google.com/document/d/1dUlWGHLKLF2dmcnjFdw9Mb8AbmjlNvS5cSCLFWitM50/edit?usp=sharing";
+document.getElementById('noc-ip').href="http://www.test-ipv6.com/";
+document.getElementById('noc-foradoar').href="https://foradoar.org/";
+document.getElementById('noc-trafego').href="https://ix.br/trafego/agregado/df";
+document.getElementById('noc-centOS').href="https://www.centos.org/download/";
+document.getElementById('noc-gameserverping').href="https://gameserverping.com/";
+document.getElementById('noc-blizzard').href="https://us.battle.net/support/pt/article/7870";
+document.getElementById('noc-speedtest').href="https://www.speedtest.net/pt";
+document.getElementById('noc-simet').href="https://beta.simet.nic.br/";
+document.getElementById('noc-fast').href="https://fast.com/pt/";
+
+var remoto ="https://docs.google.com/document/d/11YFZMrI-ZvENpJRvGUZhWpwddXcAxhFOhC5PrViPnmU/edit?usp=sharing";
+document.getElementById('noc-remoto-rede').href=remoto;
+document.getElementById('noc-remoto-plano').href=remoto;
+document.getElementById('noc-remoto-jogo').href=remoto;
+document.getElementById('noc-remoto-site').href=remoto;
+
+var porta ="https://docs.google.com/document/d/1GrHdU-onAO2QtymbFH5dcMwOUFkC3gebbxmSAUqwyOM/edit?usp=sharing";
+document.getElementById('noc-porta-rede').href=porta;
+document.getElementById('noc-porta-jogo').href=porta;
+document.getElementById('noc-porta-site').href=porta;

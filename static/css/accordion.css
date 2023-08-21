@@ -45,7 +45,7 @@
     transform: rotate(45deg);
 }
 
-.accordion-smenu, #id-app,#id-dev,#id-moc{
+.accordion-smenu, #id-app,#id-dev,#id-moc,#id-noc{
     position: relative;
     background-color: rgba(0, 0, 0, 0);
     overflow: hidden;
@@ -64,7 +64,8 @@
 .accordion-smenu a,
 #id-app .accordion-btn-smenu,
 #id-dev .accordion-btn-smenu,
-#id-imoc .accordion-btn-smenu{
+#id-imoc .accordion-btn-smenu,
+#id-noc .accordion-btn-smenu{
     display: block;
     padding: 16px 26px;
     color: black;
@@ -77,7 +78,8 @@
 .accordion-smenu a:hover,
 #id-app .accordion-btn-smenu:hover,
 #id-dev .accordion-btn-smenu:hover,
-#id-imoc .accordion-btn-smenu:hover{
+#id-imoc .accordion-btn-smenu:hover,
+#id-noc .accordion-btn-smenu:hover{
     transform: translateY(-5px);
     background-color: rgba(0, 0, 0, 0.1);
 }
@@ -85,7 +87,8 @@
 .accordion-smenu a::before,
 #id-app .accordion-btn-smenu::before ,
 #id-dev .accordion-btn-smenu::before,
-#id-imoc .accordion-btn-smenu::before {
+#id-imoc .accordion-btn-smenu::before,
+#id-noc .accordion-btn-smenu::before{
     content: "";
     position: absolute;
     width: 6px;
@@ -100,7 +103,8 @@
 .accordion-smenu a:hover::before,
 #id-app .accordion-btn-smenu:hover::before,
 #id-dev .accordion-btn-smenu:hover::before,
-#id-imoc .accordion-btn-smenu:hover::before{
+#id-imoc .accordion-btn-smenu:hover::before,
+#id-noc .accordion-btn-smenu:hover::before{
   opacity: 1;
 }
 
@@ -114,7 +118,8 @@
 
 #id-app .accordion-smenu-text ,
 #id-dev .accordion-smenu-text ,
-#id-imoc .accordion-smenu-text{
+#id-imoc .accordion-smenu-text,
+#id-noc .accordion-smenu-text{
     padding-left: 29px !important
 }
 
