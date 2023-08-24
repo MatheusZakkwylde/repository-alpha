@@ -180,6 +180,7 @@ document.getElementById('noc-blizzard').href="https://us.battle.net/support/pt/a
 document.getElementById('noc-speedtest').href="https://www.speedtest.net/pt";
 document.getElementById('noc-simet').href="https://beta.simet.nic.br/";
 document.getElementById('noc-fast').href="https://fast.com/pt/";
+document.getElementById('noc-manual-jogo').href="https://docs.google.com/document/d/1ybrAIdMR1Q7oFH3HR4wsTI9ZrkVjdtfZKav6XrSXvIE/edit?usp=sharing";
 
 var remoto ="https://docs.google.com/document/d/11YFZMrI-ZvENpJRvGUZhWpwddXcAxhFOhC5PrViPnmU/edit?usp=sharing";
 document.getElementById('noc-remoto-rede').href=remoto;
