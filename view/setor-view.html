@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Suporte da equiṕe Alpha Team vizando soluções rápidas">
+  <meta name="author" content="Matheus Pinheiro Pereira">
+
+<!-- Adicione os css -->
+<script src="../static/js/css.js"></script>
+ 
+</head>
+
+<body>
+    <!--INICIO NAV-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+
+      <button class="navbar-toggler" type="button" id="toggleBtn">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <a class="navbar-brand" href="../view/home-view.html">
+        <!-- LOGO -->
+        <img src="../static/img/lobo-phone-icon.png" alt="Lobo Alpha" width="60" height="60" class="d-inline-block">
+        <span class="ml-3">Alpha Team Suporte </span>
+      </a>
+
+      <div class="collapse navbar-collapse justify-content-end">
+          <!-- TEXTAR PORTAS DE SERVIÇO -->
+        <form class="form-inline">
+
+          <div class="single-input" data-toggle="tooltip" title="Adicione Portas separadas por virgula simples.">
+            <input type="text" name="port" id="port-box" class="input form-control" autocomplete="off" required>
+            <label for="port-box"> Noc Porta</label>
+          </div>
+
+          <button class="btn btn-outline-light" type="button" onclick="ports()"><i class="bi bi-search"></i></button>
+        </form>
+        <!-- TEXTAR PORTAS DE SERVIÇO -->
+        <form class="form-inline">
+
+          <div class="single-input" data-toggle="tooltip" title="Adicione Portas separadas por virgula simples.">
+            <input type="text" name="plano" id="plano-box" class="input form-control" autocomplete="off" required>
+            <label for="plano-box"> Plano</label>
+          </div>
+
+          <button id="btn-clik-p"  class="btn btn-outline-light" type="button"><i class="bi bi-search"></i></button>
+        </form>
+      </div>
+    </nav>
+    <!--FIM DA NAV-->
+
+    <div id="content-body">
+      <div class="container-fluid">
+        <div class="row">
+          <!-- Navbar lateral -->
+          <nav id="sidebar" class="col-md-2 bg-dark sidebar">
+            <div class="sidebar-body">
+              <ul class="nav nav-pills flex-column">
+                <li class="nav-item dashboard-sidebar">
+                  <a class="nav-link active" href="../view/home-view.html" aria-current="page"><i class="bi bi-speedometer2"></i> Dashboard</a>
+                </li>
+
+                  <li class="nav-item btn-sidebar">
+                    <a class="nav-link" href="../view/home-view.html"> <i class="bi bi-house-door"></i> Home</a>
+                 </li>
+                 
+                 <li class="nav-item btn-sidebar">
+                  <a class="nav-link" href="../view/setor-view.html"> <i class="bi bi-headset"></i> Setores</a>
+                 </li> 
+                 
+                 <li class="nav-item footer-sidebar">
+                  <a class="nav-link" href="#"></a>
+                 </li>
+              </ul>
+            </div>
+          </nav>
+          <!--Fim NavBar lateral-->
+
+          <!-- Conteúdo da página -->
+          <main class="ms-sm-auto col-lg-12 px-md-4 body-accordion">
+            <div class="row">
+              <!--Colunha abstrata-->
+              <div class="body-abstract-fila-one col-lg-2 ml-5"></div>
+              <!--Inicio dos Setores-->
+              <div class="col-lg-5 body-dimension-fila">
+                <ul class="list-group accordion-menu">
+                  <li class="list-group-item accordion-item">
+                    <span class="accordion-btn btn btn-card">
+                      <div class="left-content">
+                        <i class="icon bi bi-sim"></i>
+                        <span class="icon-name"> Brisa Móvel</span>
+                      </div>
+
+                      <div class="right-content">
+                        <span class="icon-name"> *3018</span>
+                        <i class="icon bi bi-keyboard"></i>
+                      </div>
+                    </span>
+                  </li>
+
+                  <li class="list-group-item accordion-item">
+                    <span class="accordion-btn btn btn-card">
+                      <div class="left-content">
+                        <i class="icon bi bi-sim-fill"></i>
+                        <span class="icon-name">Brisa Móvel Outra Operadora</span>
+                      </div>
+
+                      <div class="right-content">
+                        <span class="icon-name">1058</span>
+                        <i class="icon bi bi-telephone"></i>
+                      </div>
+                    </span>
+                  </li>
+
+                  <li class="list-group-item accordion-item">
+                    <span class="accordion-btn btn btn-card">
+                      <div class="left-content">
+                        <i class="icon bi bi-chat-dots"></i>
+                        <span class="icon-name">Comercial Venda Chat</span>
+                      </div>
+
+                      <div class="right-content">
+                        <span class="icon-name"> (88) 981820637</span>
+                        <i class="icon bi bi-phone"></i>
+                      </div>
+                    </span>
+                  </li>
+
+                  <li class="list-group-item accordion-item">
+                    <span class="accordion-btn btn btn-card">
+                      <div class="left-content">
+                        <i class="icon bi bi-headset"></i>
+                        <span class="icon-name">Suporte Varejo</span>
+                      </div>
+                      <div class="right-content">
+                        <span class="icon-name"> 0800 281 3017</span>
+                        <i class=" icon bi bi-telephone"></i>
+                      </div>
+                    </span>
+                  </li>
+
+                  <li class="list-group-item accordion-item">
+                    <span class="accordion-btn btn btn-card">
+                      <div class="left-content">
+                        <i class="icon bi bi-chat-dots-fill"></i>
+                        <span class="icon-name">Suporte Varejo Chat</span>
+                      </div>
+
+                      <div class="right-content">
+                        <span class="icon-name"> (84) 981118525</span>
+                        <i class="icon bi bi-phone"></i>
+                      </div>
+                    </span>
+                  </li>
+
+                  <li class="list-group-item accordion-item">
+                    <span class="accordion-btn btn btn-card">
+                      <div class="left-content">
+                        <i class="icon bi bi-building"></i>
+                        <span class="icon-name">Suporte Corporativo</span>
+                      </div>
+
+                      <div class="right-content">
+                        <span class="icon-name"> 0800 282 3017</span>
+                        <i class=" icon bi bi-telephone"></i>
+                      </div>
+                    </span>
+                  </li>
+
+                  <li class="list-group-item accordion-item">
+                    <span class="accordion-btn btn btn-card">
+                      <div class="left-content">
+                        <i class="bi bi-globe2"></i>
+                        <span class="icon-name">Suporte Regional</span>
+                      </div>
+
+                      <div class="right-content">
+                        <span class="icon-name"> 0800 285 3917</span>
+                        <i class="icon bi bi-telephone"></i>
+                      </div>
+                    </span>
+                  </li>
+
+                  <li class="list-group-item accordion-item">
+                    <span class="accordion-btn btn btn-card">
+                      <div class="left-content">
+                        <i class="icon bi bi-chat-dots"></i>
+                        <span class="icon-name">Suporte Regional Chat</span>
+                      </div>
+                      <div class="right-content">
+                        <span class="icon-name"> (88) 981223054</span>
+                        <i class="icon bi bi-phone"></i>
+                      </div>
+                    </span>
+                  </li>
+
+                  <li class="list-group-item accordion-item">
+                    <span class="accordion-btn btn btn-card">
+                      <div class="left-content">
+                        <i class="icon bi bi-megaphone"></i>
+                        <span class="icon-name">Ouvidoria</span>
+                      </div>
+
+                      <div class="right-content">
+                        <span class="icon-name"> 0800 281 4000</span>
+                        <i class="icon bi bi-telephone"></i>
+                      </div>
+                    </span>
+                  </li>
+                </ul>
+              </div>
+              <!--fim dos Setores-->
+              <!--Inicio da fila-->
+              <div class="col-lg-4 body-dimension-fila-one">
+                <ul class="list-group accordion-menu">
+                  <li class="list-group-item accordion-item">
+                    <span class="accordion-btn btn btn-card">
+                      <div class="left-content">
+                        <i class="icon bi bi-sim"></i>
+                        <span class="icon-name">Brisa Móvel</span>
+                      </div>
+
+                      <div class="right-content">
+                        <span class="icon-name">Fila 280</span>
+                        <i class="icon bi bi-telephone"></i>
+                      </div>
+                    </span>
+                  </li>
+
+                  <li class="list-group-item accordion-item">
+                    <span class="accordion-btn btn btn-card">
+                      <div class="left-content">
+                        <i class="icon bi bi-cart"></i>
+                        <span class="icon-name"> Comercial Venda</span>
+                      </div>
+
+                      <div class="right-content">
+                        <span class="icon-name">Fila 400</span>
+                        <i class="icon bi bi-telephone"></i>
+                      </div>
+                    </span>
+                  </li>
+
+                  <li class="list-group-item accordion-item">
+                    <span class="accordion-btn btn btn-card">
+                      <div class="left-content">
+                        <i class="icon bi bi-currency-dollar"></i>
+                        <span class="icon-name"> Cobrança</span>
+                      </div>
+
+                      <div class="right-content">
+                        <span class="icon-name">Fila 300</span>
+                        <i class="icon bi bi-telephone"></i>
+                      </div>
+                    </span>
+                  </li>
+
+                  <li class="list-group-item accordion-item">
+                    <span class="accordion-btn btn btn-card">
+                      <div class="left-content">
+                        <i class="icon bi bi-currency-dollar"></i>
+                        <span class="icon-name"> Cobrança Corporativo</span>
+                      </div>
+
+                      <div class="right-content">
+                        <span class="icon-name">Fila 380</span>
+                        <i class="icon bi bi-telephone"></i>
+                      </div>
+                    </span>
+                  </li>
+
+                  <li class="list-group-item accordion-item">
+                    <span class="accordion-btn btn btn-card">
+                      <div class="left-content">
+                        <i class="icon bi bi-headset"></i>
+                        <span class="icon-name"> Sac</span>
+                      </div>
+
+                      <div class="right-content">
+                        <span class="icon-name">Fila 100</span>
+                        <i class="icon bi bi-telephone"></i>
+                      </div>
+                    </span>
+                  </li>
+
+                  <li class="list-group-item accordion-item">
+                    <span class="accordion-btn btn btn-card">
+                      <div class="left-content">
+                        <i class="icon bi bi-cart"></i>
+                        <span class="icon-name"> Sac Comercial</span>
+                      </div>
+
+                      <div class="right-content">
+                        <span class="icon-name">Fila 640</span>
+                        <i class="icon bi bi-telephone"></i>
+                      </div>
+                    </span>
+                  </li>
+
+                  <li class="list-group-item accordion-item">
+                    <span class="accordion-btn btn btn-card">
+                      <div class="left-content">
+                        <i class="icon bi-headset"></i>
+                        <span class="icon-name"> Suporte Varejo</span>
+                      </div>
+
+                      <div class="right-content">
+                        <span class="icon-name">Fila 200</span>
+                        <i class="icon bi bi-telephone"></i>
+                      </div>
+                    </span>
+                  </li>
+
+                  <li class="list-group-item accordion-item">
+                    <span class="accordion-btn btn btn-card">
+                      <div class="left-content">
+                        <i class="icon bi-headset"></i>
+                        <span class="icon-name"> Suporte Varejo Ativo</span>
+                      </div>
+
+                      <div class="right-content">
+                        <span class="icon-name">Fila 430</span>
+                        <i class="icon bi bi-telephone"></i>
+                      </div>
+                    </span>
+                  </li>
+
+                  <li class="list-group-item accordion-item">
+                    <span class="accordion-btn btn btn-card">
+                      <div class="left-content">
+                        <i class="icon bi bi-building"></i>
+                        <span class="icon-name"> Suporte Corporativo</span>
+                      </div>
+
+                      <div class="right-content">
+                        <span class="icon-name">Fila 600</span>
+                        <i class="icon bi bi-telephone"></i>
+                      </div>
+                    </span>
+                  </li>
+
+                  <li class="list-group-item accordion-item">
+                    <span class="accordion-btn btn btn-card">
+                      <div class="left-content">
+                        <i class="icon bi bi-globe2"></i>
+                        <span class="icon-name">Regional</span>
+                      </div>
+
+                      <div class="right-content">
+                        <span class="icon-name">Fila 700</span>
+                        <i class="icon bi bi-telephone"></i>
+                      </div>
+                    </span>
+                  </li>
+
+                  <li class="list-group-item accordion-item">
+                    <span class="accordion-btn btn btn-card">
+                      <div class="left-content">
+                        <i class="icon bi bi-x-circle"></i>
+                        <span class="icon-name"> Retenção</span>
+                      </div>
+
+                      <div class="right-content">
+                        <span class="icon-name">Fila 500</span>
+                        <i class="icon bi bi-telephone"></i>
+                      </div>
+                    </span>
+                  </li>
+
+                  <li class="list-group-item accordion-item">
+                    <span class="accordion-btn btn btn-card">
+                      <div class="left-content">
+                        <i class="icon bi bi-list fa-3x"></i>
+                        <span class="icon-name"> Trans: Fila Direto</span>
+                      </div>
+
+                      <div class="right-content">
+                        <span class="icon-name">* 1 + ramal</span>
+                        <i class="icon bi bi-telephone"></i>
+                      </div>
+                    </span>
+                  </li>
+
+                  <li class="list-group-item accordion-item">
+                    <span class="accordion-btn btn btn-card">
+                      <div class="left-content">
+                        <i class="icon bi bi-list fa-3x"></i>
+                        <span class="icon-name"> Trans: Atendente</span>
+                      </div>
+
+                      <div class="right-content">
+                        <span class="icon-name">* 2 + ramal </span>
+                        <i class="icon bi bi-telephone"></i>
+                      </div>
+                    </span>
+                  </li>
+                </ul>
+              </div>
+              <!--fim da fila-->
+            </div>
+          </main>
+        </div>
+      </div>
+
+          <!-- Modal -->
+        <div id="myModal" class="modal">
+          <div class="modal-content">
+            <span class="close"><i class="bi bi-backspace-fill"></i></span>
+            <p id="modal-text"></p>
+          </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+       <div class="row m-0">
+        <div class="col-lg-2"></div>
+        <div class="col-lg-10">
+          &copy; 2023 Brisanet Telecomunicações SA. Todos os direitos reservados.
+        </div>
+       </div>
+    </footer>
+
+  <script src="../static/js/src.js"></script>
+</body>
+</html>

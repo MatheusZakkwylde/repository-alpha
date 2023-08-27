@@ -123,3 +123,26 @@
     padding-left: 29px !important
 }
 
+
+.left-content {
+    display: flex;
+    align-items:center;
+  }
+
+  .right-content {
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
+  }
+
+  .btn-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .btn-card .icon-name{
+    margin-right: 15px;;
+  }
+
