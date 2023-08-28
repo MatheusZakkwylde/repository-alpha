@@ -129,6 +129,9 @@ document.getElementById('conectaretencao').href="https://drive.google.com/file/d
 document.getElementById('brisamovelmanual').href="https://docs.google.com/presentation/d/1y5jHYlqjlH0xewP02I3m1tF3lm6QFNRy/edit?usp=sharing&ouid=114021083883399434156&rtpof=true&sd=true";
 document.getElementById('brisamovelplano').href="https://www.brisanet.com.br/movel";
 document.getElementById('brisamovelfaq').href="https://sites.google.com/grupobrisanet.com.br/produtos-grupo-brisanet/brisam%C3%B3vel/faq-brisamovel?authuser=0";
+//5G
+
+document.getElementById('5g-manual').href="https://docs.google.com/presentation/d/1M-uM9A-HTqWk65OWTQvKhIR4vP-yTlYwCVvuWtK2AcU/edit?usp=sharing"
 
 //fixo
 document.getElementById('fixomanual').href="https://docs.google.com/presentation/d/1lgj5zkDsLY0jhyhVe5bf_0rHMX5XJXbc1iVKgFkUEHw/edit?usp=sharing";
