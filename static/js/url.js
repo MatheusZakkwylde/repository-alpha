@@ -11,6 +11,13 @@ document.getElementById('manual-duplicado').href="https://drive.google.com/file/
 document.getElementById('centro-privacidade').href="https://www.brisanet.com.br/centro-de-privacidade";
 document.getElementById('protocolo-atendimento').href="https://docs.google.com/document/d/1UeD9l-BzmOECIIhmcCO-E7GzejM9ETTjJ1hWfS2nLg4/edit?usp=sharing";
 
+//Monitoria
+document.getElementById('monitoria-regra').href="https://docs.google.com/document/d/1r47XVbN6TXIfynovkeq6xmdoCXC7VlyNpsNBc-iwT_E/edit?usp=sharing";
+document.getElementById('monitoria-atendimento').href="https://docs.google.com/presentation/d/1HktDkrnd1bvylzntL3dWmpyPyahSzrp1zZ_e9rclfB0/edit?usp=sharing";
+document.getElementById('monitoria-treinamento').href="https://drive.google.com/file/d/1Uax2Dh1AP1J2KG062zp409232hKm4axJ/view?usp=sharing";
+document.getElementById('monitoria-desdobramento').href="https://docs.google.com/spreadsheets/d/1GrPyIIJqEtCrjJDDaWeNsw9Amfj8Tm_7eNVyMsQHwhQ/edit?usp=sharing";
+document.getElementById('monitoria-desdobramento-adaptado').href="https://docs.google.com/spreadsheets/d/1VspIUzDjBCu2zukocZoezkccJJfjjtr3sR0CBrBaYZU/edit?usp=sharing";
+
 //Sistemas
 document.getElementById('siga').href="https://siga.brisanet.net.br/v1";
 document.getElementById('yoda').href="https://revan-atendimento.brisanet.net.br";
