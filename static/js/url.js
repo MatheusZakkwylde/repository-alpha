@@ -47,6 +47,7 @@ document.getElementById('brisamanual').href="https://docs.google.com/presentatio
 document.getElementById('brisaplayweb').href="https://app.brisaplay.com.br/sign-in";
 document.getElementById('brisaplaymanual').href="https://docs.google.com/presentation/d/1vXo5HgEKuFg0YuRdW3cZvqnRcKeBblfTV-cLKTjAbdU/edit?usp=sharing";
 document.getElementById('brisaplayativar').href="https://docs.google.com/presentation/d/1eBRMGA6KRTxAbEveAEjKAzNSagsZ893zFZnuzM-4x88/edit?usp=sharing";
+document.getElementById('brisaplaytv').href="https://drive.google.com/file/d/1XE7wzWZOJmNRAu0StaOeP3sTW7PppLRa/view?usp=sharing";
 
 //brisamusic
 document.getElementById('brisamusicweb').href="https://app.brisamusic.com.br/index.html#/home";
