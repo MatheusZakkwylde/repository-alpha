@@ -95,15 +95,17 @@
                     </span>
                     
                     <div id="id-ponto" class="collapse accordion-smenu" aria-labelledby="accordion-header-ponto" data-parent="#accordion-info">
-                      <a href="#" id="usuario-ponto" target="_blank" >
-                          <i class=" icon bi bi-person-circle"></i>
-                          <span class="icon-name">Usuário</span>
+                      <a href="#" target="_blank" id="totvs">
+                        <div class="icon-container">
+                          <div class="icon icon-img-totvs"></div>
+                          <span class="icon-name">Tot Vs RH</span>
+                        </div>
                       </a>
-                      
-                      <a href="#" id="registro-ponto" target="_blank" >
-                        <i class="icon bi  bi-clock"></i>
-                        <span class="icon-name">Registrar</span>
-                       </a>
+
+                      <a href="#" id="ativacao-ponto" target="_blank" >
+                          <i class="icon bi bi-power"></i>
+                          <span class="icon-name">Ativação</span>
+                      </a>
                     </div>
                   </li>  
                   <!--fim do ponto-->  
@@ -178,6 +180,7 @@
                     </span>
                     
                     <div id="id-monitoria" class="collapse accordion-smenu" aria-labelledby="accordion-header-monitoria" data-parent="#accordion-info">
+
                       <a href="#" id="monitoria-atendimento" target="_blank" >
                         <i class="icon bi bi-book"></i>
                         <span class="icon-name">Treinamento Atendimento</span>
@@ -188,9 +191,39 @@
                         <span class="icon-name">Treinamento Monitoria</span>
                       </a>
 
+                      <a href="#" id="monitoria-script-ativo" target="_blank" >
+                        <i class="icon bi bi-book"></i>
+                        <span class="icon-name">Atendimento Ativo</span>
+                      </a>
+
+                      <a href="#" id="monitoria-script-receptivo" target="_blank" >
+                        <i class="icon bi bi-book"></i>
+                        <span class="icon-name">Atendimento Receptivo</span>
+                      </a>
+
                       <a href="#" id="monitoria-regra" target="_blank" >
                           <i class="icon bi bi-book"></i>
-                          <span class="icon-name">Regra Monitoria</span>
+                          <span class="icon-name">Politica Regra Monitoria</span>
+                      </a>
+
+                      <a href="#" id="monitoria-politica-protocolo" target="_blank" >
+                        <i class="icon bi bi-book"></i>
+                        <span class="icon-name">Politica Protocolo</span>
+                      </a>
+
+                      <a href="#" id="monitoria-politica-id" target="_blank" >
+                        <i class="icon bi bi-book"></i>
+                        <span class="icon-name">Politica Id Positivo</span>
+                      </a>
+
+                      <a href="#" id="monitoria-politica-voz" target="_blank" >
+                        <i class="icon bi bi-book"></i>
+                        <span class="icon-name">Politica Tom De Voz</span>
+                      </a>
+
+                      <a href="#" id="monitoria-politica-linguagem" target="_blank" >
+                        <i class="icon bi bi-book"></i>
+                        <span class="icon-name">Politica De Linguagem</span>
                       </a>
                       
                       <a href="#" id="monitoria-desdobramento" target="_blank" >
@@ -260,13 +293,6 @@
                         <div class="icon-container">
                           <div class="icon icon-img-cact"></div>
                           <span class="icon-name">Cact</span>
-                        </div>
-                      </a>
-
-                      <a href="#" target="_blank" id="totvs" >
-                        <div class="icon-container">
-                          <div class="icon icon-img-totvs"></div>
-                          <span class="icon-name">Tot Vs RH</span>
                         </div>
                       </a>
 
@@ -789,6 +815,7 @@
                         <a href="#" id="noc-porta-rede"  class="accordion-btn-smenu accordion-smenu-text" target="_blank" ><i class=" icon bi bi-book"></i><span class="icon-name">Porta TCP/UDP</span></a>
                         <a href="#" id="noc-remoto-rede"  class="accordion-btn-smenu accordion-smenu-text" target="_blank" ><i class=" icon bi bi-book"></i><span class="icon-name">Remoto</span></a>
                         <a href="#" id="noc-ip" class="accordion-btn-smenu accordion-smenu-text" target="_blank" ><i class="icon bi bi-globe"></i><span class="icon-name">Ip v4/6</span></a>
+                        <a href="#" id="noc-blacklist-rede"  class="accordion-btn-smenu accordion-smenu-text" target="_blank" ><i class=" icon bi bi-globe"></i><span class="icon-name">Black List IP</span></a>
                         <a href="#" id="noc-trafego" class="accordion-btn-smenu accordion-smenu-text" target="_blank" ><i class="icon bi bi-globe"></i><span class="icon-name">Ix.br - Estatística de tráfego</span></a>
                        </div>
                         <!--fim da rede-->
@@ -823,6 +850,7 @@
                         <a href="#" id="noc-remoto-jogo"  class="accordion-btn-smenu accordion-smenu-text" target="_blank" ><i class=" icon bi bi-book"></i><span class="icon-name">Remoto</span></a>
                         <a href="#" id="noc-porta-jogo"  class="accordion-btn-smenu accordion-smenu-text" target="_blank" ><i class=" icon bi bi-book"></i><span class="icon-name">Porta TCP/UDP</span></a>
                         <a href="#" id="noc-ip" class="accordion-btn-smenu accordion-smenu-text" target="_blank" ><i class="icon bi bi-globe"></i><span class="icon-name">Ip v4/6</span></a>
+                        <a href="#" id="noc-blacklist-jogo"  class="accordion-btn-smenu accordion-smenu-text" target="_blank" ><i class=" icon bi bi-globe"></i><span class="icon-name">Black List IP</span></a>
                         <a href="#" id="noc-gameserverping" class="accordion-btn-smenu accordion-smenu-text" target="_blank" ><i class="icon bi bi-globe"></i><span class="icon-name">GameServerPing - Latência Jogos</span></a>
                         <a href="#" id="noc-blizzard" class="accordion-btn-smenu accordion-smenu-text" target="_blank" ><i class="icon bi bi-globe"></i><span class="icon-name">Blizzard - Ip Servidor de Jogos</span></a>
                       </div>
@@ -840,6 +868,7 @@
                         <a href="#" id="noc-foradoar" class="accordion-btn-smenu accordion-smenu-text" target="_blank" ><i class="icon bi bi-globe"></i><span class="icon-name">Fora do Ar - Site</span></a>
                         <a href="#" id="noc-remoto-site"  class="accordion-btn-smenu accordion-smenu-text" target="_blank" ><i class=" icon bi bi-book"></i><span class="icon-name">Remoto</span></a>
                         <a href="#" id="noc-porta-site"  class="accordion-btn-smenu accordion-smenu-text" target="_blank" ><i class=" icon bi bi-book"></i><span class="icon-name">Porta TCP/UDP</span></a>
+                        <a href="#" id="noc-blacklist-site"  class="accordion-btn-smenu accordion-smenu-text" target="_blank" ><i class=" icon bi bi-globe"></i><span class="icon-name">Black List IP</span></a>
                       </div>
                       <!--Fim site-->
                     </div>
@@ -907,6 +936,8 @@
                       <div id="id-imocmanual" class="collapse" aria-labelledby="accordion-header-imocmanual" data-parent="#accordion-imoc-smenu">
                         <a href="#" id="imoc-manual-sinal" class="accordion-btn-smenu accordion-smenu-text" target="_blank" ><i class=" icon bi bi-book"></i><span class="icon-name">Sinal Irregular</span></a>
                       </div>
+                      <a href="#" id="imoc-cabo-sub" class="accordion-btn-smenu accordion-smenu-text" target="_blank" ><i class="icon bi bi-globe"></i><span class="icon-name">Cabos Submarinos</span></a>
+                      <a href="#" id="imoc-cabo-sub3D" class="accordion-btn-smenu accordion-smenu-text" target="_blank" ><i class="icon bi bi-globe"></i><span class="icon-name">3D Cabos Submarinos</span></a>
                       <!--fim do Manual imoc-->
                     </div>
                   </li>

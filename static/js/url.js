@@ -1,7 +1,6 @@
 
 //Ponto jornada e regras internas
-document.getElementById('registro-ponto').href = 'https://registro.pontotel.com.br/#/register/code';
-document.getElementById('usuario-ponto').href = 'https://gestao.pontotel.com.br/#/cognito/login';
+document.getElementById('ativacao-ponto').href = 'https://grupobrisanet.mybeehome.com/news/483/detail';
 document.getElementById('jornada').href = 'https://docs.google.com/spreadsheets/d/1eEkaqj1BM8tjzY3olsUiJwBsA-kCOw0fyDG89UlfSWM/edit?usp=sharing';
 document.getElementById('termoresponsabilidade').href = "https://docs.google.com/document/d/1b6ccovW00PIaGi3NIDQWrJuHz8Lzt52as_RjRECb4vk/edit?usp=sharing";
 document.getElementById('lgpd').href = "https://docs.google.com/document/d/1xBRToe-Mi3oZW2Zl6a1M2eFY0m_6ff8X/edit?usp=sharing&ouid=114021083883399434156&rtpof=true&sd=true";
@@ -17,6 +16,13 @@ document.getElementById('monitoria-atendimento').href="https://docs.google.com/p
 document.getElementById('monitoria-treinamento').href="https://drive.google.com/file/d/1Uax2Dh1AP1J2KG062zp409232hKm4axJ/view?usp=sharing";
 document.getElementById('monitoria-desdobramento').href="https://docs.google.com/spreadsheets/d/1GrPyIIJqEtCrjJDDaWeNsw9Amfj8Tm_7eNVyMsQHwhQ/edit?usp=sharing";
 document.getElementById('monitoria-desdobramento-adaptado').href="https://docs.google.com/spreadsheets/d/1VspIUzDjBCu2zukocZoezkccJJfjjtr3sR0CBrBaYZU/edit?usp=sharing";
+document.getElementById('monitoria-script-ativo').href="https://docs.google.com/document/d/1MLb4KDUCD3RMuYKX_iEZbnhTY_Ou0dHdVXY3XT48PeU/edit";
+document.getElementById('monitoria-script-receptivo').href="https://docs.google.com/document/d/1bED5Yu49QVudvtKrPFr3fnlGv1fYJh_gN7q8EpPFk_o/edit";
+document.getElementById('monitoria-politica-protocolo').href="https://docs.google.com/document/d/1AQFIRsig4xLh6cYTgEiVm0E_N64RrGPpFMK22ZBotUU/edit?usp=sharing";
+document.getElementById('monitoria-politica-id').href="https://docs.google.com/document/d/1ZjLiOPkyK1b0p18QwX729wjQprOCWxkpiF1tNgpsfIk/edit?usp=sharing";
+document.getElementById('monitoria-politica-voz').href="https://docs.google.com/document/d/1EUuZt6MRMoCwYtZEdNECHpBJarY72JzJtDHDVhtAvCM/edit?usp=sharing";
+document.getElementById('monitoria-politica-linguagem').href="https://docs.google.com/document/d/102V7qVfMK4fusKCquD11vvv2XP9_XySyHvKcju1UOvw/edit?usp=sharing";
+
 
 //Sistemas
 document.getElementById('siga').href="https://siga.brisanet.net.br/v1";
@@ -176,6 +182,8 @@ document.getElementById('imocvisualizarcobrar').href="https://docs.google.com/sp
 document.getElementById('imocabrirdrop').href="https://docs.google.com/forms/d/e/1FAIpQLSezeLhFUVyh-3W1mkPAxUOBp623O5Yx6Re12vcH0jKpSUFE2g/viewform";
 document.getElementById('imocvisualizardrop').href="https://docs.google.com/spreadsheets/d/15OFRfigb8Z4Obs7WwXBmmCXiSGJDBfmd1oIH3vC4wyY/edit?usp=sharing";
 document.getElementById('imoc-manual-sinal').href="https://docs.google.com/document/d/1lPloNmiYAhaphLmy_xsuHddr7yiuzWvbQ58V4DcdYhk/edit?usp=sharing";
+document.getElementById('imoc-cabo-sub').href="https://www.submarinecablemap.com";
+document.getElementById('imoc-cabo-sub3D').href="https://infoworldmaps.com/3d-submarine-cable-map/";
 
 document.getElementById('iat-gerencia').href="https://docs.google.com/spreadsheets/d/108CeKc84WUCiP0Np6F8htHgwy7Y37jqlCq24LC0Y6no/edit?usp=sharing";
 document.getElementById('iat-reparo').href="https://docs.google.com/spreadsheets/d/1rrEh8qXBXzyjemZ2cR2wqOzdZsnAJY8wfUM_jVuEl6Q/edit?usp=sharing";
@@ -203,3 +211,8 @@ var porta ="https://docs.google.com/document/d/1GrHdU-onAO2QtymbFH5dcMwOUFkC3geb
 document.getElementById('noc-porta-rede').href=porta;
 document.getElementById('noc-porta-jogo').href=porta;
 document.getElementById('noc-porta-site').href=porta;
+
+var blacklist = "https://mxtoolbox.com/blacklists.aspx";
+document.getElementById('noc-blacklist-rede').href=blacklist;
+document.getElementById('noc-blacklist-jogo').href=blacklist;
+document.getElementById('noc-blacklist-site').href=blacklist;
