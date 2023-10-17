@@ -1,6 +1,9 @@
 
 //Ponto jornada e regras internas
 document.getElementById('ativacao-ponto').href = 'https://grupobrisanet.mybeehome.com/news/483/detail';
+document.getElementById('bater-ponto').href ="https://drive.google.com/file/d/1tZfb2kQ9EF_0sqcH6KtZOONCzg0T_YIf/view?usp=sharing";
+document.getElementById('atestado-ponto').href ="https://drive.google.com/file/d/1ZPn8FjD8XHJ_zDW_s40n38o8mqRXqO34/view?usp=sharing";
+document.getElementById('correcao-ponto').href ="https://drive.google.com/file/d/1WJOt7qUh6TXuvD0gDYPaUUSGwNAU_u4H/view?usp=sharing";
 document.getElementById('jornada').href = 'https://docs.google.com/spreadsheets/d/1eEkaqj1BM8tjzY3olsUiJwBsA-kCOw0fyDG89UlfSWM/edit?usp=sharing';
 document.getElementById('termoresponsabilidade').href = "https://docs.google.com/document/d/1b6ccovW00PIaGi3NIDQWrJuHz8Lzt52as_RjRECb4vk/edit?usp=sharing";
 document.getElementById('lgpd').href = "https://docs.google.com/document/d/1xBRToe-Mi3oZW2Zl6a1M2eFY0m_6ff8X/edit?usp=sharing&ouid=114021083883399434156&rtpof=true&sd=true";
@@ -165,10 +168,11 @@ document.getElementById('tvplano').href="https://www.brisanet.com.br/tv";
 document.getElementById('tvcanal').href="https://docs.google.com/spreadsheets/d/1z8BJUq-KoMpN-_zl-U1ELdbYdDTcRgqc4cXydnswA8M/edit?usp=sharing";
 document.getElementById('tvsuporte').href="https://docs.google.com/document/d/1Ay8Ns9BPv99_Fz7ZDrZ-MWq_X3kanhG1ciHLIMtUaSA/edit?usp=sharing";
 
-//partes internas
+//partes internas tp-link
 document.getElementById('devabrirticket').href="https://form.asana.com/?k=ZKtRz7T-MoFWSLZRpyuQUQ&d=1187238493337382";
 document.getElementById('devvisualizarticket').href="https://app.asana.com/0/1203336242746784/board";
 document.getElementById('dev-manual-tplink').href="https://docs.google.com/presentation/d/1a0lCYCCBJvPYjLQgVri2DyqXhqOgaZbUQDNhMgKjstc/edit?usp=sharing";
+document.getElementById('dev-gerenciador-tplink').href="https://docs.google.com/presentation/d/1tfdP_KQUzHaWIR1IuxATRGYR37pMrBb1gmpqedw9aS4/edit?usp=sharing";
 
 document.getElementById('emulador-tplink').href="https://www.tp-link.com/br/support/emulator/";
 document.getElementById('emulador-tenda').href="https://www.tendacn.com/br/simulator/default.html";
