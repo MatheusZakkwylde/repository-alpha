@@ -73,3 +73,24 @@
     border-top: #fff solid 1px;
     border-bottom: #ffffff solid 1px;
 }
+
+
+#id-curso{
+    padding-left: 15px;
+    padding-top: 10px;
+    border: none;
+    margin: 0px;
+}
+
+#id-curso  a{
+    display: block;
+    color: #ffffff;
+    border-bottom: #ffffff solid 1px;
+    margin-bottom: 10px;
+    margin-right: 15px;
+    padding-bottom: 4px;
+}
+
+#id-curso  a:hover{
+    color: #ccc;
+}

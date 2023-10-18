@@ -4,6 +4,7 @@ document.getElementById('ativacao-ponto').href = 'https://grupobrisanet.mybeehom
 document.getElementById('bater-ponto').href ="https://drive.google.com/file/d/1tZfb2kQ9EF_0sqcH6KtZOONCzg0T_YIf/view?usp=sharing";
 document.getElementById('atestado-ponto').href ="https://drive.google.com/file/d/1ZPn8FjD8XHJ_zDW_s40n38o8mqRXqO34/view?usp=sharing";
 document.getElementById('correcao-ponto').href ="https://drive.google.com/file/d/1WJOt7qUh6TXuvD0gDYPaUUSGwNAU_u4H/view?usp=sharing";
+document.getElementById('organograma-ponto').href ="https://drive.google.com/file/d/1GgjQ0zPf85K8Vv9eTyR1m6mxHZduzv1U/view?usp=sharing";
 document.getElementById('jornada').href = 'https://docs.google.com/spreadsheets/d/1eEkaqj1BM8tjzY3olsUiJwBsA-kCOw0fyDG89UlfSWM/edit?usp=sharing';
 document.getElementById('termoresponsabilidade').href = "https://docs.google.com/document/d/1b6ccovW00PIaGi3NIDQWrJuHz8Lzt52as_RjRECb4vk/edit?usp=sharing";
 document.getElementById('lgpd').href = "https://docs.google.com/document/d/1xBRToe-Mi3oZW2Zl6a1M2eFY0m_6ff8X/edit?usp=sharing&ouid=114021083883399434156&rtpof=true&sd=true";
