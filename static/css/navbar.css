@@ -38,6 +38,7 @@ nav .single-input label{
     transform: all 0.2s;
     color: #ffffff;
 }
+  
 
 nav .form-control{
     border: none;
@@ -62,6 +63,10 @@ nav .form-control:focus{
 nav form .single-input .input:focus ~ label,
 nav form .single-input .input:valid ~ label{
     transform: translatey(-20px);
+}
+
+nav form .single-input .input-mac{
+    width: 135px !important;
 }
 
 
